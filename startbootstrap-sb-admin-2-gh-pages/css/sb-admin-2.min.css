@@ -11100,7 +11100,7 @@ a:focus {
     height: 4.375rem;
     display: flex;
     align-items: center;
-    padding: 0 .75rem
+    padding: 0 .75rem;
 }
 
 .topbar .nav-item .nav-link:focus {
@@ -11112,7 +11112,7 @@ a:focus {
 }
 
 .topbar .dropdown {
-    position: static
+    position: static;
 }
 
 .topbar .dropdown .dropdown-menu {
@@ -11131,7 +11131,7 @@ a:focus {
     border: 1px solid #4e73df;
     padding-top: .75rem;
     padding-bottom: .75rem;
-    color: #fff
+    color: #fff;
 }
 
 .topbar .dropdown-list .dropdown-item {
@@ -11195,15 +11195,15 @@ a:focus {
 }
 
 .topbar.navbar-light .navbar-nav .nav-item .nav-link {
-    color: #d1d3e2
+    color: #00DB07
 }
 
 .topbar.navbar-light .navbar-nav .nav-item .nav-link:hover {
-    color: #b7b9cc
+    color: #00FF00
 }
 
 .topbar.navbar-light .navbar-nav .nav-item .nav-link:active {
-    color: #858796
+    color: #009305
 }
 
 .sidebar {
