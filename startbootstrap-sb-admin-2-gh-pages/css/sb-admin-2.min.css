@@ -10372,7 +10372,7 @@ button.bg-dark:hover {
 }
 
 .text-center {
-    margin-top:65px;  
+    margin: 65px auto 0 auto;  
 }
 
 @media (min-width:576px) {
