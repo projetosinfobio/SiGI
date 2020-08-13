@@ -9,7 +9,6 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -44,6 +43,14 @@
 .text-center2 {
     margin-top:300px;
     margin-left: 40px;
+}
+#otoaqui{
+    color:black;
+    background-image: linear-gradient(180deg, #d9d9d9 10%, #a6a6a6 100%);
+    
+}
+#otoaquidiferente{
+    opacity: 100%;
 }
 image
 :root {
@@ -4417,7 +4424,7 @@ input[type=submit].btn-block {
     flex-direction: column;
     padding-left: 0;
     margin-bottom: 0;
-    list-style: none
+    list-style: none;
 }
 
 .navbar-nav .nav-link {
@@ -10377,11 +10384,8 @@ button.bg-dark:hover {
 }
 
 .text-center {
-<<<<<<< Updated upstream
     margin: 65px auto 0 auto;  
-=======
     margin-top:65px;
->>>>>>> Stashed changes
 }
 
 @media (min-width:576px) {
@@ -10821,8 +10825,8 @@ a:focus {
 }
 
 .bg-gradient-primary {
-    background-color: #006400;
-    background-image: linear-gradient(180deg, #008000 10%, #00FF00 100%);
+    background-color: #08591c;
+    background-image: linear-gradient(180deg, #0e9931 10%, #009a00 100%);
     background-size: cover
 }
 
@@ -11037,9 +11041,9 @@ a:focus {
     transform: rotate(-15deg)
 }
 
-.dropdown .dropdown-menu {
-    /*font-size: .85rem*/
-}
+/*.dropdown .dropdown-menu {
+    font-size: .85rem
+}*/
 
 .dropdown .dropdown-menu .dropdown-header {
     font-weight: 800;
