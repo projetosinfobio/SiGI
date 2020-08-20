@@ -10845,8 +10845,12 @@ a:focus {
 
 .bg-gradient-primary {
     background-color: #08591c;
+<<<<<<< HEAD
    
     
+=======
+    background-size: cover
+>>>>>>> Renan
 }
 
 .bg-gradient-secondary {
