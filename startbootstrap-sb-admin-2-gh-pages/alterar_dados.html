@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SiGi - Start Page</title>
+    <title>SiGi - Alterar Dados</title>
     <link rel="icon" href="img/logo.png">
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -37,7 +37,7 @@
                 </div>
                 <div class="sidebar-brand-text mx-3">SiGi</div>
             </a>
-<br><br>
+            <br><br>
             <div class="profile">
                 <img src="img/os lindos.jpg" height="200px" width="190px" style="margin-left: 17px;">
 
@@ -46,6 +46,12 @@
                 <a class="nav-link" href="index.html">
                     
                     <span id="otoaquidiferente">Alterar dados</span></a>
+            </li>
+            <hr class="sidebar-divider d-none d-md-block">
+            <li class="nav-item" id="otoaqui">
+                <a class="nav-link" href="index.html">
+                    
+                    <span id="otoaquidiferente">Alterar senha</span></a>
             </li>
             <!-- ----------------------------------------------------------------------------------------------------- -->
 
@@ -161,7 +167,7 @@
                         <!-- Nav Item - Messages -->
                         <li class="nav-item dropdown no-arrow mx-1">
                             <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Avaliações
-                                <!--<i class="fas fa-envelope fa-fw"></i>
+                                <!--<i class="fas fa-envelope fa-fw"></i>-->
                                 <!-- Counter - Messages -->
                                 <!--<span class="badge badge-danger badge-counter">7</span>-->
                             </a>
@@ -216,7 +222,7 @@
 
                         <li class="nav-item dropdown no-arrow mx-1">
                             <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Eventos
-                                <!--<i class="fas fa-envelope fa-fw"></i>
+                                <!--<i class="fas fa-envelope fa-fw"></i>-->
                                 <!-- Counter - Messages -->
                                 <!--<span class="badge badge-danger badge-counter">7</span>-->
                             </a>
@@ -325,6 +331,74 @@
                     <!-- Page Heading -->
                     <h1 class="h3 mb-4 text-gray-800">Alterar Dados</h1>
 
+                    <!-------------------------------------------------------->
+                    
+                    <div id="formAlt">
+                        <h4 class="m-0 font-weight-bold text-primary"> &nbsp;Alterar dados pessoais&nbsp;</h4><br>
+                        <form class="frmalteracao">
+                            &nbsp;Nome:&nbsp;&nbsp; <input type="text"><br><br>
+                            &nbsp;Email:&nbsp;&nbsp;&nbsp; <input type="email"><br><br>
+                            &nbsp;Celular: <input type="number">
+                            <br><br><br>
+                        <h4 class="m-0 font-weight-bold text-primary">  &nbsp;Alterar redes sociais</h4><br>
+                        &nbsp;Facebook: <input type="text"><br><br>
+                        &nbsp;Linkedin:&nbsp;&nbsp; <input type="text"><br><br>
+                        &nbsp; GitHub:&nbsp;&nbsp;&nbsp; <input type="text">
+
+                    </form><br>
+                    </div>
+                    <div id ="separator"></div>
+                    <div id="formAlt2" style="width: 300px;">
+                        <h4 class="m-0 font-weight-bold text-primary"> &nbsp;Alterar Endereço&nbsp;</h4><br>
+                        <form class="frmalteracao">
+                            &nbsp;Rua:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text"><br><br>
+                            &nbsp;Número:&nbsp;&nbsp;&nbsp; <input type="number"><br><br>
+                            &nbsp;Complemento:   &nbsp;&nbsp;&nbsp; <input type="text" size="14px"><br><br>
+                            &nbsp;CEP: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number"><br><br>
+                            &nbsp;Cidade:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text"><br><br>
+                            &nbsp;<label for="estados">Estado: </label>
+
+                            <select name="cars" id="cars">
+                              <option value="AC">AC</option>
+                              <option value="AL">AL</option>
+                              <option value="AP">AP</option>
+                              <option value="AM">AM</option>
+                              <option value="BA">BA</option>
+                              <option value="CE">CE</option>
+                              <option value="DF">DF</option>
+                              <option value="ES">ES</option>
+                              <option value="GO">GO</option>
+                              <option value="MA">MA</option>
+                              <option value="MT">MT</option>
+                              <option value="MS">MS</option>
+                              <option value="MG">MG</option>
+                              <option value="PA">PA</option>
+                              <option value="PB">PB</option>
+                              <option value="PR">PR</option>
+                              <option value="PE">PE</option>
+                              <option value="PI">PI</option>
+                              <option value="RJ">RJ</option>
+                              <option value="RN">RN</option>
+                              <option value="RS">RS</option>
+                              <option value="RO">RO</option>
+                              <option value="RR">RR</option>
+                              <option value="SC">SC</option>
+                              <option value="SP">SP</option>
+                              <option value="SE">SE</option>
+                              <option value="TO">TO</option>                            
+
+                            </select>
+
+                            <a class="nav-link" href="index.html">
+                    
+                                <span id="otoaquidiferente" style="background-color: #009a00; padding:5px; color: white;">Alterar senha</span></a>
+                            
+                    </form><br>
+                    </div>
+
+
+
+                    <!-------------------------------------------------------->
                 </div>
                 <!-- /.container-fluid -->
 
@@ -332,13 +406,14 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            <footer class="sticky-footer bg-white">
+        <!--    <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
                         <span>Copyright &copy; Your Website 2019</span>
                     </div>
                 </div>
             </footer>
+        -->
             <!-- End of Footer -->
 
         </div>

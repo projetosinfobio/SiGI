@@ -44,14 +44,33 @@
     margin-top:300px;
     margin-left: 40px;
 }
-#otoaqui{
+/*#otoaqui{
     color:black;
     background-image: linear-gradient(180deg, #d9d9d9 10%, #a6a6a6 100%);
     
-}
+}*/
 #otoaquidiferente{
     opacity: 100%;
 }
+
+#formAlt{
+    background-color:#d9d9d9;
+    color:black;
+    float:left;
+}
+#formAlt2
+{
+    float: left;
+    color:black;
+    background-color:#d9d9d9;
+}
+#separator{
+    height: 300px;
+    float: left;
+    width: 200px;
+}
+
+
 image
 :root {
     --blue: #4e73df;
@@ -10826,31 +10845,31 @@ a:focus {
 
 .bg-gradient-primary {
     background-color: #08591c;
-    background-image: linear-gradient(180deg, #0e9931 10%, #009a00 100%);
-    background-size: cover
+   
+    
 }
 
 .bg-gradient-secondary {
-    background-color: #32CD32;
-    background-image: linear-gradient(180deg, #858796 10%, #60616f 100%);
+    background-color: #0e9931;
+    
     background-size: cover
 }
 
 .bg-gradient-success {
-    background-color: #1cc88a;
+    background-color: #0e9931;
     background-image: linear-gradient(180deg, #1cc88a 10%, #13855c 100%);
     background-size: cover
 }
 
 .bg-gradient-info {
-    background-color: #36b9cc;
-    background-image: linear-gradient(180deg, #36b9cc 10%, #258391 100%);
+    background-color: #0e9931;
+    
     background-size: cover
 }
 
 .bg-gradient-warning {
-    background-color: #f6c23e;
-    background-image: linear-gradient(180deg, #f6c23e 10%, #dda20a 100%);
+    background-color: #0e9931;
+  
     background-size: cover
 }
 
@@ -11102,11 +11121,11 @@ a:focus {
 }
 
 .topbar #sidebarToggleTop:hover {
-    background-color: #eaecf4
+    background-color: #0e9931
 }
 
 .topbar #sidebarToggleTop:active {
-    background-color: #dddfeb
+    background-color: #0e9931
 }
 
 .topbar .navbar-search {
