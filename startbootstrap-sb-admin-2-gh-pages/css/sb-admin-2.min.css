@@ -49,9 +49,6 @@
     background-image: linear-gradient(180deg, #d9d9d9 10%, #a6a6a6 100%);
     
 }*/
-#otoaquidiferente{
-    opacity: 100%;
-}
 
 #formAlt{
     background-color:#d9d9d9;
@@ -63,11 +60,23 @@
     float: left;
     color:black;
     background-color:#d9d9d9;
+    height: 460px;
 }
 #separator{
     height: 300px;
     float: left;
     width: 200px;
+}
+
+
+#form-group-arredondado {        
+    font-size: 1rem;
+    font-weight: 400;  
+    background-clip: padding-box;    
+    border-radius: 10rem;
+    border: 1px solid;
+    border-color:#6e707e;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 
