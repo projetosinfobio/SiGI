@@ -2598,14 +2598,14 @@ fieldset:disabled a.btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #32CD32 ;
-    border-color: #008400;
+    background-color: #0e9931 ;
+    border-color:#08591c;
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #008000;/*MUDA A COR DE HOVER DO BTN LOGIN*/
-    border-color: #2653d4
+    background-color: #0e9931;/*MUDA A COR DE HOVER DO BTN LOGIN*/
+    border-color:#08591c
 }
 
 .btn-primary.focus,
