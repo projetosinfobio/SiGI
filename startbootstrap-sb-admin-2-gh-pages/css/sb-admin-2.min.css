@@ -51,7 +51,7 @@
 }*/
 
 #formAlt{
-    background-color:#d9d9d9;
+    background-color:#ffffff;
     color:black;
     float:left;
 }
@@ -59,8 +59,11 @@
 {
     float: left;
     color:black;
-    background-color:#d9d9d9;
+    background-color:#ffffff;
     height: 460px;
+}
+#content{
+    background-color: #d9d9d9;
 }
 #separator{
     height: 300px;
@@ -69,7 +72,7 @@
 }
 
 
-#form-group-arredondado {        
+#form-group-arredondado { 
     font-size: 1rem;
     font-weight: 400;  
     background-clip: padding-box;    
@@ -78,6 +81,7 @@
     border-color:#6e707e;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
+
 
 
 image
@@ -10854,12 +10858,7 @@ a:focus {
 
 .bg-gradient-primary {
     background-color: #08591c;
-<<<<<<< HEAD
-   
-    
-=======
     background-size: cover
->>>>>>> Renan
 }
 
 .bg-gradient-secondary {
