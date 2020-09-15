@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SiGi - Alterar Dados</title>
+    <title>SiGi - Alterar Senha</title>
     <link rel="icon" href="img/logo.png">
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -46,16 +46,15 @@
                     <p style="color: white;">Fulano Beltrano</p>
                     <p style="color: white;">Diretoria</p>
                 </b></center>
-
             </div>
-            <li class="nav-item" id="otoaqui">
-                <a class="nav-link" href="#" onclick="alert('Você já está aqui!')">
+            <li class="nav-item" id="ntoaqui">
+                <a class="nav-link" href="alterar_dados.html">
                     
-                    <span id="otoaquidiferente" >Alterar dados</span></a>
+                    <span id="otoaquidiferente">Alterar dados</span></a>
             </li>
             <hr class="sidebar-divider d-none d-md-block">
-            <li class="nav-item" id="ntoaqui">
-                <a class="nav-link" href="alterar_senha.html">
+            <li class="nav-item" id="otoaqui">
+                <a class="nav-link" href="#"  onclick="alert('Você já está aqui!')">
                     
                     <span id="otoaquidiferente">Alterar senha</span></a>
             </li>
@@ -188,53 +187,7 @@
                                 <!-- Counter - Messages -->
                                 <!--<span class="badge badge-danger badge-counter">7</span>-->
                             </a>
-                            <!-- Dropdown - Messages -->
-                            <!--<div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
-                                <h6 class="dropdown-header">
-                                    Message Center
-                                </h6>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="https://source.unsplash.com/fn_BT9fwg_E/60x60" alt="">
-                                        <div class="status-indicator bg-success"></div>
-                                    </div>
-                                    <div class="font-weight-bold">
-                                        <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been having.</div>
-                                        <div class="small text-gray-500">Emily Fowler · 58m</div>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="https://source.unsplash.com/AU4VPcFN4LE/60x60" alt="">
-                                        <div class="status-indicator"></div>
-                                    </div>
-                                    <div>
-                                        <div class="text-truncate">I have the photos that you ordered last month, how would you like them sent to you?</div>
-                                        <div class="small text-gray-500">Jae Chun · 1d</div>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="https://source.unsplash.com/CS2uCrpNzJY/60x60" alt="">
-                                        <div class="status-indicator bg-warning"></div>
-                                    </div>
-                                    <div>
-                                        <div class="text-truncate">Last month's report looks great, I am very happy with the progress so far, keep up the good work!</div>
-                                        <div class="small text-gray-500">Morgan Alvarez · 2d</div>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt="">
-                                        <div class="status-indicator bg-success"></div>
-                                    </div>
-                                    <div>
-                                        <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</div>
-                                        <div class="small text-gray-500">Chicken the Dog · 2w</div>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
-                            </div>-->
+                  
                         </li>
 
                         <li class="nav-item dropdown no-arrow mx-1">
@@ -342,73 +295,46 @@
                     
 
                     <!-- Page Heading -->
-                  
-
+                  <br><br><br>
                     <!-------------------------------------------------------->
-                    
-                    <div id="formAlt">
-                        <h4 class="m-0 font-weight-bold text-primary"> &nbsp;Dados pessoais&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4><br>
+                    <center>
+                    <div id="formAltPw">
+                        
+                           <!-- <center><h4 class="m-0 font-weight-bold text-primary">Alterar senha</h4><br></center>-->
+                        <br><br>
+                        
+                        <!--form-->
+                        
                         <form class="frmalteracao">
-                            &nbsp;&nbsp;Nome:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" class="form-group-arredondado"><br><br>
-                            &nbsp;&nbsp;Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="email" class="form-group-arredondado"><br><br>
-                            &nbsp;&nbsp;Celular: &nbsp;&nbsp;&nbsp;&nbsp;<input type="number" class="form-group-arredondado">
+                            <script type="text/javascript">
+                                function valida() {
+                                   
+                                        var num = document.getElementById("nUsp").value;
+                                        var n = num.toString();
+                                        if (n.length>=9||n.length<=6)
+                                            alert("Deu erro xampson");
+                                        else
+                                            alert("Validou");
+                                   
+                                }
+                            </script>
+                            &nbsp;&nbsp;N° USP:&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" id="nUsp"  class="form-group-arredondado"><br><br>
+                            &nbsp;&nbsp;Senha antiga: &nbsp;<input type="text" class="form-group-arredondado"><br><br>
+                            &nbsp;&nbsp;Senha nova: &nbsp;&nbsp;&nbsp;<input type="text" class="form-group-arredondado">
                             <br><br><br>
-                        <h4 class="m-0 font-weight-bold text-primary">  &nbsp;Redes sociais</h4><br>
-                        &nbsp;&nbsp;Facebook: <input type="text" class="form-group-arredondado"><br><br>
-                        &nbsp;&nbsp;Linkedin:&nbsp;&nbsp; <input type="text" class="form-group-arredondado"><br><br>
-                        &nbsp;&nbsp; GitHub:&nbsp;&nbsp;&nbsp; <input type="text" class="form-group-arredondado">
-                            
-                    </form><br>
-                    </div>
-                    <div id ="separator"></div>
-                    <div id="formAlt2" style="width: 300px;">
-                        <h4 class="m-0 font-weight-bold text-primary"> &nbsp;Endereço&nbsp;</h4><br>
-                        <form class="frmalteracao">
-                            &nbsp;&nbsp;Rua:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" class="form-group-arredondado"><br><br>
-                            &nbsp;&nbsp;Número:&nbsp;&nbsp;&nbsp; <input type="number" class="form-group-arredondado"><br><br>
-                            &nbsp;&nbsp;Complemento:   &nbsp;&nbsp;&nbsp; <input type="text" class="form-group-arredondado" size="14px"><br><br>
-                            &nbsp;&nbsp;CEP: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" class="form-group-arredondado"><br><br>
-                            &nbsp;&nbsp;Cidade:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" class="form-group-arredondado"><br><br>
-                            &nbsp;&nbsp;<label for="estados" >Estado: </label>
 
-                            <select name="cars" class="form-group-arredondado" id="cars">
-                              <option value="AC">AC</option>
-                              <option value="AL">AL</option>
-                              <option value="AP">AP</option>
-                              <option value="AM">AM</option>
-                              <option value="BA">BA</option>
-                              <option value="CE">CE</option>
-                              <option value="DF">DF</option>
-                              <option value="ES">ES</option>
-                              <option value="GO">GO</option>
-                              <option value="MA">MA</option>
-                              <option value="MT">MT</option>
-                              <option value="MS">MS</option>
-                              <option value="MG">MG</option>
-                              <option value="PA">PA</option>
-                              <option value="PB">PB</option>
-                              <option value="PR">PR</option>
-                              <option value="PE">PE</option>
-                              <option value="PI">PI</option>
-                              <option value="RJ">RJ</option>
-                              <option value="RN">RN</option>
-                              <option value="RS">RS</option>
-                              <option value="RO">RO</option>
-                              <option value="RR">RR</option>
-                              <option value="SC">SC</option>
-                              <option value="SP">SP</option>
-                              <option value="SE">SE</option>
-                              <option value="TO">TO</option>                            
-
-                            </select>
-                            <br><br><br>
-                            <a class="nav-link" href="index.html">
+                        
+                        <!--form-->
+                        
+                        
+                        <a class="nav-link" href="" onclick="valida()">
                     
-                                <span class="form-group-arredondado" style="background-color: #009a00; padding:5px; color: white;">Alterar meus dados</span></a>
+                                <span class="form-group-arredondado" style="background-color: #009a00; padding:5px; color: white;">Alterar minha senha</span></a>
                                 <br>
                     </form>
+                
                     </div>
-
+                </center>
 
 
                     <!-------------------------------------------------------->

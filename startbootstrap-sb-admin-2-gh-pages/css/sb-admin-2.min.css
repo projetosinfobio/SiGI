@@ -44,16 +44,25 @@
     margin-top:300px;
     margin-left: 40px;
 }
-/*#otoaqui{
+#otoaqui{
     color:black;
-    background-image: linear-gradient(180deg, #d9d9d9 10%, #a6a6a6 100%);
+    background-color: #0e9931;   
+}
+#ntoaqui{
+    color:black;
+   
     
-}*/
+}
 
 #formAlt{
     background-color:#ffffff;
     color:black;
     float:left;
+}
+#formAltPw{
+    background-color:#ffffff;
+    color:black;
+    width: 400px;
 }
 #formAlt2
 {
@@ -72,7 +81,7 @@
 }
 
 
-#form-group-arredondado { 
+.form-group-arredondado { 
     font-size: 1rem;
     font-weight: 400;  
     background-clip: padding-box;    
