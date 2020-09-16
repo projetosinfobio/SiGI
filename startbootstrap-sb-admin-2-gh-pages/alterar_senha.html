@@ -309,20 +309,30 @@
                             <script type="text/javascript">
                                 function valida() {
                                    
-                                        var num = document.getElementById("nUsp").value;
+                                        var num = document.getElementById("nUsp").value;                                    
                                         var n = num.toString();
-                                        if (n.length>=9||n.length<=6)
+                                        if (n.length>9||n.length<=6)
                                             alert("Deu erro xampson");
                                         else
                                             alert("Validou");
                                    
                                 }
+                                function mostrapw(param)
+                                {
+                                    var field;
+                                    param==='1'?field=document.getElementById("pw1"):field=document.getElementById("pw2");
+                                    if(field.type==="password")                                    
+                                        field.type="text";                                    
+                                    else
+                                        field.type="password";
+                                }
                             </script>
-                            &nbsp;&nbsp;N° USP:&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" id="nUsp"  class="form-group-arredondado"><br><br>
-                            &nbsp;&nbsp;Senha antiga: &nbsp;<input type="text" class="form-group-arredondado"><br><br>
-                            &nbsp;&nbsp;Senha nova: &nbsp;&nbsp;&nbsp;<input type="text" class="form-group-arredondado">
+                            <form>
+                            N° USP:&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" id="nUsp"  class="form-group-arredondado"><br><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Senha antiga: &nbsp;<input type="password" id="pw1" class="form-group-arredondado">&nbsp;<img src="img/eye.png" width="20px" height="20px" onclick="mostrapw('1')"><BR><BR>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Senha nova: &nbsp;&nbsp;&nbsp;<input type="password" id="pw2" class="form-group-arredondado">&nbsp;<img src="img/eye.png" width="20px" height="20px" onclick="mostrapw('2')">
                             <br><br><br>
-
+                            </form>
                         
                         <!--form-->
                         

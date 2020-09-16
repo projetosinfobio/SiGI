@@ -50,8 +50,6 @@
 }
 #ntoaqui{
     color:black;
-   
-    
 }
 
 #formAlt{
@@ -80,8 +78,8 @@
     width: 200px;
 }
 
-
 .form-group-arredondado { 
+    padding-left: 0.4rem;
     font-size: 1rem;
     font-weight: 400;  
     background-clip: padding-box;    
@@ -11264,7 +11262,7 @@ a:focus {
 }
 
 .topbar.navbar-light .navbar-nav .nav-item .nav-link {
-    color: #0e9931
+    color: #00DB07
 }
 
 .topbar.navbar-light .navbar-nav .nav-item .nav-link:hover {
@@ -12324,17 +12322,4 @@ footer.sticky-footer .copyright {
 
 body.sidebar-toggled footer.sticky-footer {
     width: 100%
-}
-
-.adReu{
-    font-weight: 700;
-}
-
-#popup{
-    background-color: lightgray;
-    padding: 5px;
-    width: 500px;
-    height: 400px;
-    margin: 0 auto;
-    border: 1px solid #08591c;
 }
