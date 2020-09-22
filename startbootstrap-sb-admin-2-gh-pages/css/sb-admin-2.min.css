@@ -45,7 +45,6 @@
     margin-left: 40px;
 }
 #otoaqui{
-    color:black;
     background-color: #0e9931;   
 }
 #ntoaqui{
@@ -88,6 +87,30 @@
     border-color:#6e707e;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
+
+/*Créditos Sofia Azevedo Rosa*/
+
+#container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(6,150px);
+    grid-column-gap: 30px;
+    grid-row-gap: 20px;
+    background-color: white;
+  }
+  #container img{
+    height: 150px;
+  }
+  
+  .containerOut{
+    display: grid;
+    grid-template-columns: 1050px;
+    justify-content: center;
+    margin-top: -20px;
+    width: 100%;
+  }
+
+/*****************************/
 
 
 
