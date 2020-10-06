@@ -467,7 +467,28 @@
 
                <!-- Begin Page Content -->
                <div class="container-fluid">
-                <div class="card-body">
+                <div class="card shadow mb-4">
+
+
+               <!--Pop up Adicionar Movimentação-->
+                 <div id="popup-pedro" class="d-none">
+                    <form class="frmalteracao-pedro" style="color:black;">
+                        &nbsp;&nbsp;Valor:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" class="form-group-arredondado-pedro" placeholder="R$"><br><br>
+                        &nbsp;&nbsp;Data: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" class="form-group-arredondado-pedro" placeholder="AAAA-MM-DD"><br><br>
+                        &nbsp;&nbsp;Motivo:&nbsp;&nbsp;&nbsp;&nbsp; <textarea class="form-group-arredondado-pedro" rows="2"></textarea><br><br><br>
+
+                          <a href="Fluxo_Financeiro.html" class="btn btn-primary btn-icon-split btn-sm" >
+                            <span class="text">Adicionar</span>
+                          </a>
+
+                          <a href="Fluxo_Financeiro.html" class="btn btn-primary btn-icon-split btn-sm teste-pedro" >
+                            <span class="text">Cancelar</span>
+                          </a>
+                 </div>
+               <!--Fim do Pop up de Adicionar Movimentação-->
+
+
+                 <div class="card-body">
                     <div class="table-responsive">
                       <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
@@ -518,24 +539,21 @@
                           </tbody>
                       </table>  
                     </div>
-                    <a href="#" class="btn btn-primary btn-icon-split btn-sm">
+                    <a href="#" class="btn btn-primary btn-icon-split btn-sm" onclick="popupAddReu()">
                         <span class="text">Adicionar Movimentação</span>
                       </a>
     
-                      <a href="#" class="btn btn-primary btn-icon-split btn-sm teste-pedro">
+                      <a href="#" class="btn btn-primary btn-icon-split btn-sm teste-pedro" >
                         <span class="text">Gerar Relatório</span>
                       </a>
                   </div>
                 </div>
-
-
-                  
-
-
+               </div>
         </div>
         <!-- End of Content Wrapper -->
 
     </div>
+
     <!-- End of Page Wrapper -->
 
     <!-- Scroll to Top Button-->
@@ -571,7 +589,16 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
+    <script>
+         function popupAddReu() {
+            if (document.getElementById("popup-pedro").classList.contains('d-none'))
+                document.getElementById("popup-pedro").classList.toggle('d-flex');
+            else
+                document.getElementById("popup-pedro").classList.toggle('d-none');
+        }
+    </script>
 
+    
 </body>
 
 </html>

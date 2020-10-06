@@ -2606,6 +2606,10 @@ fieldset:disabled a.btn {
     margin-left: 0.60cm;
 }
 
+.teste-pedro2 {
+    margin-left: 2.5cm;
+}
+
 .btn-primary:hover {
     color: #fff;
     background-color: #0e9931;/*MUDA A COR DE HOVER DO BTN LOGIN*/
@@ -12291,4 +12295,39 @@ footer.sticky-footer .copyright {
 
 body.sidebar-toggled footer.sticky-footer {
     width: 100%
+}
+
+#popup-pedro {
+    background-color: white;
+    /justify-content: center;/
+    flex-direction: column;
+    position: fixed;
+    text-align: center;
+    align-self: center;
+    padding: 5px;
+    width: 600px;
+    height: 385px;
+    border: 2px solid #08591c
+}
+
+.form-group-arredondado-pedro { 
+    padding-left: 0.4rem;
+    font-size: 1rem;
+    font-weight: 400;  
+    background-clip: padding-box;    
+    border-radius: 10rem;
+    border: 1px solid;
+    border-color:#6e707e;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+
+.frmalteracao-pedro {
+    text-align: center;
+    padding-top: 80px;
+    padding-left: 160px
+}
+
+.botao-pedro {
+    background-color: #009a00; 
+    color: white
 }
