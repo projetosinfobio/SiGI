@@ -55,18 +55,20 @@
     background-color:#ffffff;
     color:black;
     float:left;
+    height:520px;
 }
 #formAltPw{
     background-color:#ffffff;
     color:black;
     width: 400px;
+    
 }
 #formAlt2
 {
     float: left;
     color:black;
     background-color:#ffffff;
-    height: 460px;
+    height: 520px;
 }
 #content{
     background-color: #d9d9d9;
@@ -114,19 +116,22 @@
 #containertools{
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(4,100px);
-    
+    grid-template-columns: repeat(3,160px);    
     grid-column-gap: 30px;
-    grid-row-gap: 20px;
-    background-color: white;
+    grid-row-gap: 40px;
+    
   }
 #maincontent{
     /*margin-right: 200px;*/
     margin-top: 100px;
 }
 .tools{
-    padding-right: 90px;
+    border-radius:0.4rem;
+    border: 2px solid;
+    border-color: black;
+    padding: 10px;
     background-color:white;
+    width:140px;
 
 }
 
@@ -295,7 +300,7 @@ sup {
 }
 
 a {
-    color: #4e73df;
+    color: #000000;
     text-decoration: none;
     background-color: transparent
 }
@@ -8261,7 +8266,8 @@ button.bg-dark:hover {
 }
 
 .m-0 {
-    margin: 0 !important
+    margin: 0 !important;
+    padding: 15px;
 }
 
 .mt-0,
