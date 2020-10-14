@@ -12310,6 +12310,19 @@ body.sidebar-toggled footer.sticky-footer {
     border: 2px solid #08591c
 }
 
+#popup-pedro2 {
+    background-color: white;
+    /justify-content: center;/
+    flex-direction: column;
+    position: fixed;
+    text-align: center;
+    align-self: center;
+    padding: 5px;
+    width: 800px;
+    height: 585px;
+    border: 2px solid #08591c
+}
+
 .form-group-arredondado-pedro { 
     padding-left: 0.4rem;
     font-size: 1rem;
@@ -12331,3 +12344,9 @@ body.sidebar-toggled footer.sticky-footer {
     background-color: #009a00; 
     color: white
 }
+
+.frmalteracao-pedro-tg {
+    text-align: center;
+    padding-top: 20px;
+}
+
