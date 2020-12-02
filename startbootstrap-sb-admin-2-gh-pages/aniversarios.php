@@ -1,3 +1,37 @@
+<?php require_once("conexao.php"); ?>
+<?php
+    //adicionar variaveis de sessao
+    /*session_start();
+	$Nro_USP = $_SESSION["Nro_USP"];
+	if(isset($_POST["nome_us"])){*/
+		$sql_niver_financeiro = "SELECT usuario.nome_us, user_dados.Nro_USP, user_dados.dta_nasc, user_dados.foto FROM usuario, user_dados, dir_usuario WHERE dir_usuario.id_dir = 1 AND user_dados.Nro_USP = dir_usuario.Nro_USP AND usuario.Nro_USP = dir_usuario.Nro_USP;";
+		$sql_niver_marketing = "SELECT usuario.nome_us, user_dados.Nro_USP, user_dados.dta_nasc, user_dados.foto FROM usuario, user_dados, dir_usuario WHERE dir_usuario.id_dir = 2 AND user_dados.Nro_USP = dir_usuario.Nro_USP AND usuario.Nro_USP = dir_usuario.Nro_USP;";
+		$sql_niver_projetos = "SELECT usuario.nome_us, user_dados.Nro_USP, user_dados.dta_nasc, user_dados.foto FROM usuario, user_dados, dir_usuario WHERE dir_usuario.id_dir = 3 AND user_dados.Nro_USP = dir_usuario.Nro_USP AND usuario.Nro_USP = dir_usuario.Nro_USP;";
+		$sql_niver_qualidade = "SELECT usuario.nome_us, user_dados.Nro_USP, user_dados.dta_nasc, user_dados.foto FROM usuario, user_dados, dir_usuario WHERE dir_usuario.id_dir = 4 AND user_dados.Nro_USP = dir_usuario.Nro_USP AND usuario.Nro_USP = dir_usuario.Nro_USP AND dir_usuario.dta_desl IS NULL;";
+		$sql_niver_rh = "SELECT usuario.nome_us, user_dados.Nro_USP, user_dados.dta_nasc, user_dados.foto FROM usuario, user_dados, dir_usuario WHERE dir_usuario.id_dir = 5 AND user_dados.Nro_USP = dir_usuario.Nro_USP AND usuario.Nro_USP = dir_usuario.Nro_USP;";
+		$sql_niver_diretoria = "SELECT usuario.nome_us, user_dados.Nro_USP, user_dados.dta_nasc, user_dados.foto FROM usuario, user_dados, dir_usuario, gerente_diretoria WHERE usuario.Nro_USP = gerente_diretoria.Nro_USP AND user_dados.Nro_USP = dir_usuario.Nro_USP AND usuario.Nro_USP = dir_usuario.Nro_USP ORDER BY user_dados.Nro_USP DESC;";
+		
+		
+		$select_niver_financeiro = mysqli_query($conexao, $sql_niver_financeiro);
+		$select_niver_marketing = mysqli_query($conexao, $sql_niver_marketing);
+		$select_niver_projetos = mysqli_query($conexao, $sql_niver_projetos);
+		$select_niver_qualidade = mysqli_query($conexao, $sql_niver_qualidade);
+		$select_niver_rh = mysqli_query($conexao, $sql_niver_rh);
+		$select_niver_diretoria = mysqli_query($conexao, $sql_niver_diretoria);
+        //echo $acesso;
+        if(!$select_niver_financeiro){
+            die("Falha na consulta ao banco");
+        }
+		else{
+			//echo "<script> alert ('Dados alterados com sucesso!'); </script>";
+		}
+	
+	
+	
+
+	
+	
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -9,20 +43,22 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Ferramentas</title>
+    <title>Aniversários </title>
     <link rel="icon" href="img/logo.png">
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css/sb-admin-2-renan.min.css" rel="stylesheet">
     <link rel="stylesheet" href="scss/navs/_sidebar.scss">
     <link rel="stylesheet" href="scss/navs/_global.scss">
     <link rel="stylesheet" href="scss/navs/_topbar.scss">
 </head>
 
 <body id="page-top">
+
+    
 
     <!-- Page Wrapper -->
     <div id="wrapper">
@@ -47,23 +83,51 @@
             <hr class="sidebar-divider">
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="aniversarios.html">
+                <a class="nav-link" id="otoaqui" href="aniversarios.html">
                     <i class="fas fa-fw fa-birthday-cake"></i>
                     <span>Aniversários</span></a>
             </li>
-
+<!--
+            <li class="nav-item active">
+              <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
+                <i class="fas fa-fw fa-folder"></i>
+                <span>Pages</span>
+              </a>
+              <div id="collapsePages" class="collapse show" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                  <h6 class="collapse-header">Login Screens:</h6>
+                  <a class="collapse-item" href="login.html">Login</a>
+                  <a class="collapse-item" href="register.html">BliBlo</a>
+                  <a class="collapse-item" href="forgot-password.html">Ta maluco eh</a>
+                  <div class="collapse-divider"></div>
+                  <h6 class="collapse-header">Other Pages:</h6>
+                  <a class="collapse-item" href="404.html">Ai vc quebra</a>
+                  <a class="collapse-item active" href="blank.html">Branco</a>
+                </div>
+              </div>
+            </li> 
+          -->
             <!-- Divider -->
             <hr class="sidebar-divider">
 
-
+            <!-- Heading 
+      <div class="sidebar-heading">
+        Interface
+      </div>-->
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" id="otoaqui" href="#" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                <a class="nav-link collapsed" href="#" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-wrench"></i>
                     <span>Ferramentas</span>
                 </a>
-
+                <!--<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Custom Components:</h6>
+            <a class="collapse-item" href="buttons.html">Buttons</a>
+            <a class="collapse-item" href="cards.html">Cards</a>
+          </div>
+        </div>-->
             </li>
 
             <!-- Divider -->
@@ -75,11 +139,44 @@
                     <i class="fas fa-fw fa-file-alt"></i>
                     <span>Documentos</span>
                 </a>
-
+                <!--<div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Custom Utilities:</h6>
+            <a class="collapse-item" href="utilities-color.html">Colors</a>
+            <a class="collapse-item" href="utilities-border.html">Borders</a>
+            <a class="collapse-item" href="utilities-animation.html">Animations</a>
+            <a class="collapse-item" href="utilities-other.html">Other</a>
+          </div>
+        </div>-->
             </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider">
+
+            <!-- Heading 
+      <div class="sidebar-heading">
+        Addons
+      </div>-->
+
+            <!-- Nav Item - Pages Collapse Menu
+      <li class="nav-item active">
+        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
+          <i class="fas fa-fw fa-folder"></i>
+          <span>Pages</span>
+        </a>
+        <div id="collapsePages" class="collapse show" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Login Screens:</h6>
+            <a class="collapse-item" href="login.html">Login</a>
+            <a class="collapse-item" href="register.html">Register</a>
+            <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
+            <div class="collapse-divider"></div>
+            <h6 class="collapse-header">Other Pages:</h6>
+            <a class="collapse-item" href="404.html">404 Page</a>
+            <a class="collapse-item active" href="blank.html">Blank Page</a>
+          </div>
+        </div>
+      </li> -->
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
@@ -97,6 +194,12 @@
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <!--<div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>-->
+
         </ul>
         <!-- End of Sidebar -->
 
@@ -152,13 +255,13 @@
                                     </div>
                                 </form>
                             </div>
-                        </li>-->
+                        </li>
 
                         <!-- Nav Item - Alerts -->
                         <li class="nav-item dropdown no-arrow mx-1">
                             <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Diretorias
                                 <!--<i class="fas fa-bell fa-fw"></i>
-                                Counter - Alerts -->
+                                <!-- Counter - Alerts -->
                                 <!--<span class="badge badge-danger badge-counter">3+</span>-->
                             </a>
                             <!-- Dropdown - Alerts -->
@@ -228,17 +331,14 @@
                         <!-- Nav Item - Messages -->
                         <li class="nav-item dropdown no-arrow mx-1">
                             <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Avaliações
-                                <!--<i class="fas fa-envelope fa-fw"></i>
-                                <!-- Counter - Messages -->
-                                <!--<span class="badge badge-danger badge-counter">7</span>-->
+                                
                             </a>
-                            <!-- Dropdown - Messages -->
-
+                            
                         </li>
 
                         <li class="nav-item dropdown no-arrow mx-1">
                             <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Eventos
-                                <!--<i class="fas fa-envelope fa-fw"></i>
+                                <!--<i class="fas fa-envelope fa-fw"></i>-->
                                 <!-- Counter - Messages -->
                                 <!--<span class="badge badge-danger badge-counter">7</span>-->
                             </a>
@@ -333,36 +433,117 @@
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Sair
                                 </a>
-                                
                             </div>
-
-                
                         </li>
 
                     </ul>
 
                 </nav>
-                <h4 class="m-0 font-weight-bold text-primary">Ferramentas</h4>
-                
-                    <div class="card-body containerOut"><br>
-                    <center>
-                        <div class="table-responsive" id="containertools">                                                
-                                <a href="#" class="tools"><i class="fas fa-fw fa-wrench"></i>&nbsp;GIMP</a>
-                                <a href="#" class="tools"><i class="fas fa-fw fa-wrench"></i>&nbsp;Illustrator</a>
-                                <a href="#" class="tools"><i class="fas fa-fw fa-wrench"></i>&nbsp;Photoshop</a>
-                                <a href="#" class="tools"><i class="fas fa-fw fa-wrench"></i>&nbsp;Sony Vegas</a>
-                                <a href="#" class="tools"><i class="fas fa-fw fa-wrench"></i>&nbsp;Camtasia</a>
-                                <a href="#" class="tools"><i class="fas fa-fw fa-wrench"></i>&nbsp;Inkscape</a>
-                                <a href="#" class="tools"><i class="fas fa-fw fa-wrench"></i>&nbsp;Ferramenta</a>
-                                <a href="#" class="tools"><i class="fas fa-fw fa-wrench"></i>&nbsp;Ferramenta</a>
-                                <a href="#" class="tools"><i class="fas fa-fw fa-wrench"></i>&nbsp;Ferramenta</a>
-                                <a href="#" class="tools"><i class="fas fa-fw fa-wrench"></i>&nbsp;Ferramenta</a>
-                                <a href="#" class="tools"><i class="fas fa-fw fa-wrench"></i>&nbsp;Ferramenta</a>
-                                <a href="#" class="tools"><i class="fas fa-fw fa-wrench"></i>&nbsp;Ferramenta</a>                                                        
+            <div id="maicontent" class="table-responsive">
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-4 text-gray-800">Aniversários</h1>
+
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                          <h6 class="m-0 font-weight-bold text-primary">Diretoria</h6>
                         </div>
-                    </center>
+                        <div class="card-body containerOut"><br>
+                          <div class="table-responsive" id="container">
+                            <!--<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">-->
+                              <?php while($nivers = mysqli_fetch_assoc($select_niver_diretoria)) {?>
+							  <div id="one" style="color: black;"><img src="<?php echo $nivers["foto"]; ?>" style="height: 150px; width: 150px;"><center><?php echo $nivers["nome_us"]; ?><br><?php echo date('d/m/Y',strtotime($nivers["dta_nasc"])); ?></center></div>
+							  <?php
+                               }?> 
+                  
+                          </div>
+                        </div>
+                      </div>  
+                    <div class="card shadow mb-4">
+                      <div class="card-header py-3">
+                        <h6 class="m-0 font-weight-bold text-primary">Projetos</h6>
+                      </div>
+                      <div class="card-body containerOut"><br>
+                        <div class="table-responsive" id="container">
+                          <!--<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">-->
+                            <?php while($nivers = mysqli_fetch_assoc($select_niver_projetos)) {?>
+							  <div id="one" style="color: black;"><img src="<?php echo $nivers["foto"]; ?>" style="height: 150px; width: 150px;"><center><?php echo $nivers["nome_us"]; ?><br><?php echo date('d/m/Y',strtotime($nivers["dta_nasc"])); ?></center></div>
+							<?php
+							}?> 
+                        </div>
+                      </div>
+                    </div>  
+                    <!--Outra tabela pra curso-->
+                    <div class="card shadow mb-4">
+                      <div class="card-header py-3">
+                        <h6 class="m-0 font-weight-bold text-primary">Recursos Humanos</h6>
+                      </div>
+                      <div class="card-body containerOut"><br>
+                        <div class="table-responsive" id="container">
+                            <?php while($nivers = mysqli_fetch_assoc($select_niver_rh)) {?>
+							  <div id="one" style="color: black;"><img src="<?php echo $nivers["foto"]; ?>" style="height: 150px; width: 150px;"><center><?php echo $nivers["nome_us"]; ?><br><?php echo date('d/m/Y',strtotime($nivers["dta_nasc"])); ?></center></div>
+							<?php
+							}?>
+                        </div>
+                      </div>
                     </div>
-                
+
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                          <h6 class="m-0 font-weight-bold text-primary">Qualidade</h6>
+                        </div>
+                        <div class="card-body containerOut"><br>
+                            <div class="table-responsive" id="container">
+							<?php while($nivers = mysqli_fetch_assoc($select_niver_qualidade)) {?>
+							  <div id="one" style="color: black;"><img src="<?php echo $nivers["foto"]; ?>" style="height: 150px; width: 150px;"><center><?php echo $nivers["nome_us"]; ?><br><?php echo date('d/m/Y',strtotime($nivers["dta_nasc"])); ?></center></div>
+							<?php
+							}?>
+                          </div>
+                        </div>
+                      </div>  
+
+                      <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                          <h6 class="m-0 font-weight-bold text-primary">Marketing</h6>
+                        </div>
+                        <div class="card-body containerOut"><br>
+                           <div class="table-responsive" id="container">
+							<?php while($nivers = mysqli_fetch_assoc($select_niver_marketing)) {?>
+							  <div id="one" style="color: black;"><img src="<?php echo $nivers["foto"]; ?>" style="height: 150px; width: 150px;"><center><?php echo $nivers["nome_us"]; ?><br><?php echo date('d/m/Y',strtotime($nivers["dta_nasc"])); ?></center></div>
+							<?php
+							}?>
+                  
+                          </div>
+                        </div>
+                      </div>
+
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                              <h6 class="m-0 font-weight-bold text-primary">Financeiro</h6>
+                            </div>
+                            <div class="card-body containerOut"><br>
+                               <div class="table-responsive" id="container">
+                                <?php while($nivers = mysqli_fetch_assoc($select_niver_financeiro)) {?>
+								  <div id="one" style="color: black;"><img src="<?php echo $nivers["foto"]; ?>" style="height: 150px; width: 150px;"><center><?php echo $nivers["nome_us"]; ?><br><?php echo date('d/m/Y',strtotime($nivers["dta_nasc"])); ?></center></div>
+								<?php
+								}?>
+                              </div>
+                            </div>
+                      </div>  
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+        </div>
         <!-- End of Content Wrapper -->
 
     </div>
@@ -406,3 +587,7 @@
 
 </html>
 
+<?php
+    // Fechar conexao
+    mysqli_close($conexao);
+?>

@@ -117,9 +117,16 @@
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(3,160px);    
-    grid-column-gap: 30px;
+    grid-column-gap: 40px;
     grid-row-gap: 40px;
+    background-color: white;
+    padding-left:20px;
+    padding-top:30px;
+    padding-bottom:30px;
     
+    margin-left:-510px;
+
+    width:600px;
   }
 #maincontent{
     /*margin-right: 200px;*/
@@ -130,11 +137,14 @@
     border: 2px solid;
     border-color: black;
     padding: 10px;
-    background-color:white;
+    background-color:#d9d9d9;
     width:140px;
 
 }
 
+#bgtools{
+    background-color:white;
+}
 
 image
 :root {
@@ -715,7 +725,7 @@ pre code {
     padding-right: .75rem;
     padding-left: .75rem;
     margin-right: auto;
-    margin-left: auto
+    margin-left: auto;
 }
 
 @media (min-width:576px) {

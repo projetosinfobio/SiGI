@@ -1,3 +1,22 @@
+<?php require_once("conexao.php"); ?>
+<?php
+	session_start();
+	$Nro_USP = $_SESSION["Nro_USP"];
+	//echo "<script> alert ('entrou aquiqwwe!'); </script>";
+	if(isset($_POST["Nro_USP"])){
+		$sql_update_senha = "UPDATE Usuario SET senha='".md5($_POST["novasenha"])."' WHERE Nro_USP = ".$Nro_USP." AND senha='".md5($_POST["senha"])."';";
+		//echo "<script> alert ('entrou aqui!'); </script>";
+		$update_senha = mysqli_query($conexao, $sql_update_senha);
+		//echo $acesso;
+        if(!$update_senha){
+            die("Falha na consulta ao banco");
+        }
+		else{
+			echo "<script> alert ('Senha alterada com sucesso!'); </script>";
+		}
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -9,14 +28,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Ferramentas</title>
+    <title>SiGi - Alterar Senha</title>
     <link rel="icon" href="img/logo.png">
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css/sb-admin-2-renan.min.css" rel="stylesheet">
     <link rel="stylesheet" href="scss/navs/_sidebar.scss">
     <link rel="stylesheet" href="scss/navs/_global.scss">
     <link rel="stylesheet" href="scss/navs/_topbar.scss">
@@ -37,56 +56,29 @@
                 </div>
                 <div class="sidebar-brand-text mx-3">SiGi</div>
             </a>
-            <hr class="sidebar-divider">
-            <center><h4 style="color: white;"><b>Marketing</b></h4></center>
-            
-
+            <hr class="sidebar-divider d-none d-md-block">
+            <div class="profile">
+                <center><h5 style="color: white;"><b>Meu Perfil</b></h5></center>
+                <img src="img/os lindos.jpg" height="200px" width="190px" style="margin-left: 17px;">
+                <br><br>
+                <center><b>
+                    <p style="color: white;">Fulano Beltrano</p>
+                    <p style="color: white;">Diretoria</p>
+                </b></center>
+            </div>
+            <li class="nav-item" id="ntoaqui">
+                <a class="nav-link" href="alterar_dados.html">
+                    
+                    <span id="otoaquidiferente">Alterar dados</span></a>
+            </li>
+            <hr class="sidebar-divider d-none d-md-block">
+            <li class="nav-item" id="otoaqui">
+                <a class="nav-link" href="#"  onclick="alert('Você já está aqui!')">
+                    
+                    <span id="otoaquidiferente">Alterar senha</span></a>
+            </li>
             <!-- ----------------------------------------------------------------------------------------------------- -->
-            
-            
-            <hr class="sidebar-divider">
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
-                <a class="nav-link" href="aniversarios.html">
-                    <i class="fas fa-fw fa-birthday-cake"></i>
-                    <span>Aniversários</span></a>
-            </li>
 
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-
-
-
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" id="otoaqui" href="#" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Ferramentas</span>
-                </a>
-
-            </li>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-
-            <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-file-alt"></i>
-                    <span>Documentos</span>
-                </a>
-
-            </li>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-
-            <!-- Nav Item - Charts -->
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="fas fa-fw fa-users"></i>
-                    <span>Membros</span></a>
-            </li>
 
             <!-- Nav Item - Tables 
       <li class="nav-item">
@@ -97,8 +89,14 @@
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <!-- <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>-->
+
         </ul>
-        <!-- End of Sidebar -->
+            <!-- End of Sidebar -->
 
         <!-- ----------------------------------------------------------------------------------------------------- -->
 
@@ -115,54 +113,26 @@
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                         <i class="fa fa-bars"></i>
                     </button>
-
-                    
-                    <!-- Topbar Search 
-          <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-            <div class="input-group">
-              <input type="text" class="form-control bg-light border-0 small" placeholder="Procurar..." aria-label="Search" aria-describedby="basic-addon2">
-              <div class="input-group-append">
-                <button class="btn btn-primary" type="button">
-                  <i class="fas fa-search fa-sm"></i>
-                </button>
-              </div>
-            </div>
-          </form>-->
-
-
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
 
-                        <!-- Nav Item - Search Dropdown (Visible Only XS) 
-                        <li class="nav-item dropdown no-arrow d-sm-none">
-                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-search fa-fw"></i>
-                            </a>
-
-                            <!-- Dropdown - Messages 
-                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
-                                <form class="form-inline mr-auto w-100 navbar-search">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-                                        <div class="input-group-append">
-                                            <button class="btn btn-primary" type="button">
-                                                <i class="fas fa-search fa-sm"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </li>-->
 
                         <!-- Nav Item - Alerts -->
                         <li class="nav-item dropdown no-arrow mx-1">
                             <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Diretorias
-                                <!--<i class="fas fa-bell fa-fw"></i>
-                                Counter - Alerts -->
+                                <!--<i class="fas fa-bell fa-fw"></i>-->
+                                <!-- Counter - Alerts -->
                                 <!--<span class="badge badge-danger badge-counter">3+</span>-->
                             </a>
                             <!-- Dropdown - Alerts -->
                             <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+
+
+
+
+
+
+
                                 <h6 class="dropdown-header">
                                     Diretorias
                                 </h6>
@@ -222,73 +192,71 @@
                                     </div>
                                 </a>
                                 <a class="dropdown-item text-center small text-gray-500" href="#">Esconder</a>
+
+
+
+                                
                             </div>
                         </li>
 
                         <!-- Nav Item - Messages -->
                         <li class="nav-item dropdown no-arrow mx-1">
                             <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Avaliações
-                                <!--<i class="fas fa-envelope fa-fw"></i>
+                                <!--<i class="fas fa-envelope fa-fw"></i>-->
                                 <!-- Counter - Messages -->
                                 <!--<span class="badge badge-danger badge-counter">7</span>-->
                             </a>
-                            <!-- Dropdown - Messages -->
-
+                  
                         </li>
 
                         <li class="nav-item dropdown no-arrow mx-1">
                             <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Eventos
-                                <!--<i class="fas fa-envelope fa-fw"></i>
+                                <!--<i class="fas fa-envelope fa-fw"></i>-->
                                 <!-- Counter - Messages -->
                                 <!--<span class="badge badge-danger badge-counter">7</span>-->
                             </a>
                             <!-- Dropdown - Messages -->
                             <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
                                 <h6 class="dropdown-header">
-                                    Message Center
+                                    Eventos
                                 </h6>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
+                                    <!--<div class="dropdown-list-image mr-3">
                                         <img class="rounded-circle" src="https://source.unsplash.com/fn_BT9fwg_E/60x60" alt="">
                                         <div class="status-indicator bg-success"></div>
-                                    </div>
+                                    </div>-->
                                     <div class="font-weight-bold">
-                                        <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been having.</div>
-                                        <div class="small text-gray-500">Emily Fowler · 58m</div>
+                                        Reuniões
                                     </div>
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="https://source.unsplash.com/AU4VPcFN4LE/60x60" alt="">
-                                        <div class="status-indicator"></div>
-                                    </div>
-                                    <div>
-                                        <div class="text-truncate">I have the photos that you ordered last month, how would you like them sent to you?</div>
-                                        <div class="small text-gray-500">Jae Chun · 1d</div>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="https://source.unsplash.com/CS2uCrpNzJY/60x60" alt="">
-                                        <div class="status-indicator bg-warning"></div>
-                                    </div>
-                                    <div>
-                                        <div class="text-truncate">Last month's report looks great, I am very happy with the progress so far, keep up the good work!</div>
-                                        <div class="small text-gray-500">Morgan Alvarez · 2d</div>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt="">
+                                    <!--<div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="https://source.unsplash.com/fn_BT9fwg_E/60x60" alt="">
                                         <div class="status-indicator bg-success"></div>
+                                    </div>-->
+                                    <div class="font-weight-bold">
+                                        Eventos
                                     </div>
-                                    <div>
-                                        <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</div>
-                                        <div class="small text-gray-500">Chicken the Dog · 2w</div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <!--<div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="https://source.unsplash.com/fn_BT9fwg_E/60x60" alt="">
+                                        <div class="status-indicator bg-success"></div>
+                                    </div>-->
+                                    <div class="font-weight-bold">
+                                        Eventos
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <!--<div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="https://source.unsplash.com/fn_BT9fwg_E/60x60" alt="">
+                                        <div class="status-indicator bg-success"></div>
+                                    </div>-->
+                                    <div class="font-weight-bold">
+                                        Eventos
                                     </div>
                                 </a>
                                 <a class="dropdown-item text-center small text-gray-500" href="#">Esconder</a>
-                            </div>
                         </li>
                         
                          <li class="nav-item dropdown no-arrow mx-1">
@@ -333,36 +301,91 @@
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Sair
                                 </a>
-                                
                             </div>
-
-                
                         </li>
 
                     </ul>
 
                 </nav>
-                <h4 class="m-0 font-weight-bold text-primary">Ferramentas</h4>
-                
-                    <div class="card-body containerOut"><br>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+                    
+
+                    <!-- Page Heading -->
+                  <br><br><br>
+                    <!-------------------------------------------------------->
                     <center>
-                        <div class="table-responsive" id="containertools">                                                
-                                <a href="#" class="tools"><i class="fas fa-fw fa-wrench"></i>&nbsp;GIMP</a>
-                                <a href="#" class="tools"><i class="fas fa-fw fa-wrench"></i>&nbsp;Illustrator</a>
-                                <a href="#" class="tools"><i class="fas fa-fw fa-wrench"></i>&nbsp;Photoshop</a>
-                                <a href="#" class="tools"><i class="fas fa-fw fa-wrench"></i>&nbsp;Sony Vegas</a>
-                                <a href="#" class="tools"><i class="fas fa-fw fa-wrench"></i>&nbsp;Camtasia</a>
-                                <a href="#" class="tools"><i class="fas fa-fw fa-wrench"></i>&nbsp;Inkscape</a>
-                                <a href="#" class="tools"><i class="fas fa-fw fa-wrench"></i>&nbsp;Ferramenta</a>
-                                <a href="#" class="tools"><i class="fas fa-fw fa-wrench"></i>&nbsp;Ferramenta</a>
-                                <a href="#" class="tools"><i class="fas fa-fw fa-wrench"></i>&nbsp;Ferramenta</a>
-                                <a href="#" class="tools"><i class="fas fa-fw fa-wrench"></i>&nbsp;Ferramenta</a>
-                                <a href="#" class="tools"><i class="fas fa-fw fa-wrench"></i>&nbsp;Ferramenta</a>
-                                <a href="#" class="tools"><i class="fas fa-fw fa-wrench"></i>&nbsp;Ferramenta</a>                                                        
-                        </div>
-                    </center>
-                    </div>
+                    <div id="formAltPw">
+                        
+                           <!-- <center><h4 class="m-0 font-weight-bold text-primary">Alterar senha</h4><br></center>-->
+                        <br><br>
+                        
+                        <!--form-->
+                        
+                        <form class="frmalteracao" method="post" action="alterar_senha.php">
+                            <script type="text/javascript">
+                                function valida() {
+                                   
+                                        var num = document.getElementById("nUsp").value;                                    
+                                        var n = num.toString();
+                                        if (n.length>9||n.length<=6)
+                                            alert("Deu erro xampson");
+                                        else
+                                            alert("Validou");
+                                   
+                                }
+                                function mostrapw(param)
+                                {
+                                    var field;
+                                    param==='1'?field=document.getElementById("pw1"):field=document.getElementById("pw2");
+                                    if(field.type==="password")                                    
+                                        field.type="text";                                    
+                                    else
+                                        field.type="password";
+                                }
+                            </script>
+                            
+                            N° USP:&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" id="nUsp" name="Nro_USP" class="form-group-arredondado"><br><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Senha antiga: &nbsp;<input type="password" id="pw1" name="senha" class="form-group-arredondado">&nbsp;<img src="img/eye.png" width="20px" height="20px" onclick="mostrapw('1')"><BR><BR>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Senha nova: &nbsp;&nbsp;&nbsp;<input type="password" id="pw2" name="novasenha" class="form-group-arredondado">&nbsp;<img src="img/eye.png" width="20px" height="20px" onclick="mostrapw('2')">
+                            <br><br><br>
+                            
+                        
+                        <!--form-->
+                        
+                        
+                        <a class="nav-link" href="" >
+
+                        		<input type="submit" value="Alterar minha senha" id="form-group-arredondado" style="background-color: #009a00; padding:5px; color: white;"></a>
+                    
+                                <br>
+                    </form>
                 
+                    </div>
+                </center>
+
+
+                    <!-------------------------------------------------------->
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+        <!--    <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Your Website 2019</span>
+                    </div>
+                </div>
+            </footer>
+        -->
+            <!-- End of Footer -->
+
+        </div>
         <!-- End of Content Wrapper -->
 
     </div>
@@ -406,3 +429,7 @@
 
 </html>
 
+<?php
+    // Fechar conexao
+    mysqli_close($conexao);
+?>
