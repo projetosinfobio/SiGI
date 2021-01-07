@@ -26,11 +26,6 @@
 			//echo "<script> alert ('Dados alterados com sucesso!'); </script>";
 		}
 	
-	
-	
-
-	
-	
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -43,7 +38,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Aniversários </title>
+    <title>SiGI - Aniversários </title>
     <link rel="icon" href="img/logo.png">
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -51,6 +46,7 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2-renan.min.css" rel="stylesheet">
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
     <link rel="stylesheet" href="scss/navs/_sidebar.scss">
     <link rel="stylesheet" href="scss/navs/_global.scss">
     <link rel="stylesheet" href="scss/navs/_topbar.scss">
@@ -74,8 +70,12 @@
                 <div class="sidebar-brand-text mx-3">SiGi</div>
             </a>
             <hr class="sidebar-divider">
-            <center><h4 style="color: white;"><b>Marketing</b></h4></center>
-            
+            <li class="nav-item">
+                
+                <a class="nav-link-pedro" >
+
+                    <h6>Marketing</h6></a>
+            </li>
 
             <!-- ----------------------------------------------------------------------------------------------------- -->
             
@@ -83,7 +83,7 @@
             <hr class="sidebar-divider">
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" id="otoaqui" href="aniversarios.html">
+                <a class="nav-link" href="aniversarios.html">
                     <i class="fas fa-fw fa-birthday-cake"></i>
                     <span>Aniversários</span></a>
             </li>
