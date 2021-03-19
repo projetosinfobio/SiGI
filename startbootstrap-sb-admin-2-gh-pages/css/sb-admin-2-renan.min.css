@@ -53,8 +53,8 @@
 
 #formAlt{
     background-color:#ffffff;
-    color:black;
-    float:left;
+    color:rgb(167, 0, 0);
+    text-align: center;
     height:520px;
     width: 50%;
 }
@@ -755,7 +755,19 @@ pre code {
     padding-right: .75rem;
     padding-left: .75rem;
     margin-right: auto;
-    margin-left: auto
+    margin-left: auto;
+    
+}
+
+.container-fluid2 {
+    width: 100%;
+    padding-right: .75rem;
+    padding-left: .75rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 
@@ -4900,7 +4912,7 @@ input[type=submit].btn-block {
     background-clip: border-box;
     border: 1px solid #e3e6f0;
     border-radius: .35rem;
-    margin-right: 300px;
+    margin-right: 300px !important;
 }
 
 .card > hr {
@@ -4921,6 +4933,12 @@ input[type=submit].btn-block {
 .card-body {
     flex: 1 1 auto;
     padding: 1.25rem;
+}
+
+.card-body2 {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    width: 1000px;
 }
 
 .card-title {
@@ -12390,4 +12408,22 @@ footer.sticky-footer .copyright {
 
 body.sidebar-toggled footer.sticky-footer {
     width: 100%
+}
+
+.frmalteracao-gru {
+    text-align: center;
+    font-size: 50px;
+}
+
+#teste-teste {
+    vertical-align: bottom;
+    text-align: left;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    height: 300px;
+    width: 500px;
 }
