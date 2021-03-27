@@ -1,32 +1,3 @@
-<!--<?php require_once("conexao.php"); ?>
-<?php
-    //adicionar variaveis de sessao
-    /*session_start();
-	$Nro_USP = $_SESSION["Nro_USP"];
-	if(isset($_POST["nome_us"])){*/
-		$sql_niver_financeiro = "SELECT usuario.nome_us, user_dados.Nro_USP, user_dados.dta_nasc, user_dados.foto FROM usuario, user_dados, dir_usuario WHERE dir_usuario.id_dir = 1 AND user_dados.Nro_USP = dir_usuario.Nro_USP AND usuario.Nro_USP = dir_usuario.Nro_USP;";
-		$sql_niver_marketing = "SELECT usuario.nome_us, user_dados.Nro_USP, user_dados.dta_nasc, user_dados.foto FROM usuario, user_dados, dir_usuario WHERE dir_usuario.id_dir = 2 AND user_dados.Nro_USP = dir_usuario.Nro_USP AND usuario.Nro_USP = dir_usuario.Nro_USP;";
-		$sql_niver_projetos = "SELECT usuario.nome_us, user_dados.Nro_USP, user_dados.dta_nasc, user_dados.foto FROM usuario, user_dados, dir_usuario WHERE dir_usuario.id_dir = 3 AND user_dados.Nro_USP = dir_usuario.Nro_USP AND usuario.Nro_USP = dir_usuario.Nro_USP;";
-		$sql_niver_qualidade = "SELECT usuario.nome_us, user_dados.Nro_USP, user_dados.dta_nasc, user_dados.foto FROM usuario, user_dados, dir_usuario WHERE dir_usuario.id_dir = 4 AND user_dados.Nro_USP = dir_usuario.Nro_USP AND usuario.Nro_USP = dir_usuario.Nro_USP AND dir_usuario.dta_desl IS NULL;";
-		$sql_niver_rh = "SELECT usuario.nome_us, user_dados.Nro_USP, user_dados.dta_nasc, user_dados.foto FROM usuario, user_dados, dir_usuario WHERE dir_usuario.id_dir = 5 AND user_dados.Nro_USP = dir_usuario.Nro_USP AND usuario.Nro_USP = dir_usuario.Nro_USP;";
-		$sql_niver_diretoria = "SELECT usuario.nome_us, user_dados.Nro_USP, user_dados.dta_nasc, user_dados.foto FROM usuario, user_dados, dir_usuario, gerente_diretoria WHERE usuario.Nro_USP = gerente_diretoria.Nro_USP AND user_dados.Nro_USP = dir_usuario.Nro_USP AND usuario.Nro_USP = dir_usuario.Nro_USP ORDER BY user_dados.Nro_USP DESC;";
-		
-		
-		$select_niver_financeiro = mysqli_query($conexao, $sql_niver_financeiro);
-		$select_niver_marketing = mysqli_query($conexao, $sql_niver_marketing);
-		$select_niver_projetos = mysqli_query($conexao, $sql_niver_projetos);
-		$select_niver_qualidade = mysqli_query($conexao, $sql_niver_qualidade);
-		$select_niver_rh = mysqli_query($conexao, $sql_niver_rh);
-		$select_niver_diretoria = mysqli_query($conexao, $sql_niver_diretoria);
-        //echo $acesso;
-        if(!$select_niver_financeiro){
-            die("Falha na consulta ao banco");
-        }
-		else{
-			//echo "<script> alert ('Dados alterados com sucesso!'); </script>";
-		}
-	
-?>-->
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -38,14 +9,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SiGI - Aniversários </title>
+    <title>SiGi - Projeto Detalhado</title>
     <link rel="icon" href="img/logo.png">
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2-renan.min.css" rel="stylesheet">
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
     <link rel="stylesheet" href="scss/navs/_sidebar.scss">
     <link rel="stylesheet" href="scss/navs/_global.scss">
@@ -53,8 +23,6 @@
 </head>
 
 <body id="page-top">
-
-    
 
     <!-- Page Wrapper -->
     <div id="wrapper">
@@ -69,18 +37,17 @@
                 </div>
                 <div class="sidebar-brand-text mx-3">SiGi</div>
             </a>
-            <hr class="sidebar-divider">
-            <center><h4 style="color: white;"><b>Marketing</b></h4></center>
-            
 
             <!-- ----------------------------------------------------------------------------------------------------- -->
-            
-            
+            <hr class="sidebar-divider">
+            <center><h4 style="color:white;"><b>Projetos</b></h4></center>  
+            <!-- Divider -->
             <hr class="sidebar-divider">
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" id="otoaqui" href="aniversarios.html">
-                    <span>Aniversários</span></a>
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Em andamento</span></a>
             </li>
 <!--
             <li class="nav-item active">
@@ -113,8 +80,8 @@
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Ferramentas</span>
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Finalizados</span>
                 </a>
                 <!--<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
@@ -131,8 +98,8 @@
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-file-alt"></i>
-                    <span>Documentos</span>
+                    <i class="fas fa-fw fa-wrench"></i>
+                    <span>Relatórios</span>
                 </a>
                 <!--<div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
@@ -175,8 +142,8 @@
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="fas fa-fw fa-users"></i>
+                <a class="nav-link" href="charts.html">
+                    <i class="fas fa-fw fa-chart-area"></i>
                     <span>Membros</span></a>
             </li>
 
@@ -186,7 +153,13 @@
           <i class="fas fa-fw fa-table"></i>
           <span>Tables</span></a>
       </li>-->
+            <hr class="sidebar-divider">
 
+            <li class="nav-item">
+                <a class="nav-link" href="charts.html">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Atas</span></a>
+            </li>
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
@@ -326,14 +299,17 @@
                         <!-- Nav Item - Messages -->
                         <li class="nav-item dropdown no-arrow mx-1">
                             <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Avaliações
-                                
+                                <!--<i class="fas fa-envelope fa-fw"></i>
+                                <!-- Counter - Messages -->
+                                <!--<span class="badge badge-danger badge-counter">7</span>-->
                             </a>
+                            <!-- Dropdown - Messages -->
                             
                         </li>
 
                         <li class="nav-item dropdown no-arrow mx-1">
                             <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Eventos
-                                <!--<i class="fas fa-envelope fa-fw"></i>-->
+                                <!--<i class="fas fa-envelope fa-fw"></i>
                                 <!-- Counter - Messages -->
                                 <!--<span class="badge badge-danger badge-counter">7</span>-->
                             </a>
@@ -434,110 +410,59 @@
                     </ul>
 
                 </nav>
-            <div id="maicontent" class="table-responsive">
-                <div class="container-fluid">
-
-                    <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Aniversários</h1>
-
+                <!--Page Content-->
+                <div class="card-body containerOut"><br>
                     <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                          <h6 class="m-0 font-weight-bold text-primary">Diretoria</h6>
+                        <center>
+                            <h1>Nome do projeto</h1><!--PHP para nome aqui-->
+                            <h2>Empresa</h2>
+                        </center>
+                        <div style="margin-top:-100px;">  
+                            <br>                      
+                            <img src="img/os lindos.jpg" style="margin-left:100px; margin-top: -150px;" width="150px" height="150px">&nbsp;&nbsp;
+                            <textarea placeholder="Descrição do projeto" style="margin-top:100px;" cols="60" rows="7"></textarea>                                               
                         </div>
-                        <div class="card-body containerOut"><br>
-                          <div class="table-responsive" id="container">
-                            <!--<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">-->
-                              <?php while($nivers = mysqli_fetch_assoc($select_niver_diretoria)) {?>
-							  <div id="one" style="color: black;"><img src="<?php echo $nivers["foto"]; ?>" style="height: 150px; width: 150px;"><center><?php echo $nivers["nome_us"]; ?><br><?php echo date('d/m/Y',strtotime($nivers["dta_nasc"])); ?></center></div>
-							  <?php
-                               }?> 
-                  
-                          </div>
+                        <div>
+                            <div class="texto_proj_detalhado">
+                                <section>
+                                    <p>Data de Contratação: </p><br>
+                                    <p>Previsão de Término: </p><br>
+                                </section>
+                                <section>
+                                    <p>Gerente: </p><br>
+                                    <p>Equipe: </p>
+                                </section>
+                            </div>
+                            <div id="fotos_time" style="margin-top:80px; padding-left: 20px; margin-left: 80px;">
+                                <img src="fotos/renan_segamarchi.jpg" width="100px" height="100px">
+                                <img src="fotos/renan_segamarchi.jpg" width="100px" height="100px">
+                                <img src="fotos/renan_segamarchi.jpg" width="100px" height="100px">
+                                <img src="fotos/renan_segamarchi.jpg" width="100px" height="100px">                             
+                                <img src="fotos/renan_segamarchi.jpg" width="100px" height="100px"><br>
+                                <img src="fotos/renan_segamarchi.jpg" width="100px" height="100px">
+                                <img src="fotos/renan_segamarchi.jpg" width="100px" height="100px">
+                                <img src="fotos/renan_segamarchi.jpg" width="100px" height="100px">
+                                <img src="fotos/renan_segamarchi.jpg" width="100px" height="100px">
+                                <img src="fotos/renan_segamarchi.jpg" width="100px" height="100px">
+                            </div> 
+                            <div style="width:500px; float:right; margin-right:520px; margin-top: 35px;">
+                                
+                                <a class="nav-link" style="float:right;" href="#">
+                                <input type="submit" value="Documentação" class="form-group-arredondado" style="background-color: #009a00; padding:5px; color: white; width:120px;">
+                                </a>
+                                <a class="nav-link" style="float:right;" href="#">
+                                    <input type="submit" value="Editar" class="form-group-arredondado" style="background-color: #009a00; padding:5px; color: white; width:120px;">
+                                </a>
+                                <a class="nav-link" style="float:right;" href="#">
+                                    <input type="submit" value="Finalizar" class="form-group-arredondado" style="background-color: #009a00; padding:5px; color: white; width:120px;">
+                                </a>                        
+                            </div>
                         </div>
-                      </div>  
-                    <div class="card shadow mb-4">
-                      <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">Projetos</h6>
-                      </div>
-                      <div class="card-body containerOut"><br>
-                        <div class="table-responsive" id="container">
-                          <!--<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">-->
-                            <?php while($nivers = mysqli_fetch_assoc($select_niver_projetos)) {?>
-							  <div id="one" style="color: black;"><img src="<?php echo $nivers["foto"]; ?>" style="height: 150px; width: 150px;"><center><?php echo $nivers["nome_us"]; ?><br><?php echo date('d/m/Y',strtotime($nivers["dta_nasc"])); ?></center></div>
-							<?php
-							}?> 
-                        </div>
-                      </div>
-                    </div>  
-                    <!--Outra tabela pra curso-->
-                    <div class="card shadow mb-4">
-                      <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">Recursos Humanos</h6>
-                      </div>
-                      <div class="card-body containerOut"><br>
-                        <div class="table-responsive" id="container">
-                            <?php while($nivers = mysqli_fetch_assoc($select_niver_rh)) {?>
-							  <div id="one" style="color: black;"><img src="<?php echo $nivers["foto"]; ?>" style="height: 150px; width: 150px;"><center><?php echo $nivers["nome_us"]; ?><br><?php echo date('d/m/Y',strtotime($nivers["dta_nasc"])); ?></center></div>
-							<?php
-							}?>
-                        </div>
-                      </div>
                     </div>
-
-                    <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                          <h6 class="m-0 font-weight-bold text-primary">Qualidade</h6>
-                        </div>
-                        <div class="card-body containerOut"><br>
-                            <div class="table-responsive" id="container">
-							<?php while($nivers = mysqli_fetch_assoc($select_niver_qualidade)) {?>
-							  <div id="one" style="color: black;"><img src="<?php echo $nivers["foto"]; ?>" style="height: 150px; width: 150px;"><center><?php echo $nivers["nome_us"]; ?><br><?php echo date('d/m/Y',strtotime($nivers["dta_nasc"])); ?></center></div>
-							<?php
-							}?>
-                          </div>
-                        </div>
-                      </div>  
-
-                      <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                          <h6 class="m-0 font-weight-bold text-primary">Marketing</h6>
-                        </div>
-                        <div class="card-body containerOut"><br>
-                           <div class="table-responsive" id="container">
-							<?php while($nivers = mysqli_fetch_assoc($select_niver_marketing)) {?>
-							  <div id="one" style="color: black;"><img src="<?php echo $nivers["foto"]; ?>" style="height: 150px; width: 150px;"><center><?php echo $nivers["nome_us"]; ?><br><?php echo date('d/m/Y',strtotime($nivers["dta_nasc"])); ?></center></div>
-							<?php
-							}?>
-                  
-                          </div>
-                        </div>
-                      </div>
-
-                        <div class="card shadow mb-4">
-                            <div class="card-header py-3">
-                              <h6 class="m-0 font-weight-bold text-primary">Financeiro</h6>
-                            </div>
-                            <div class="card-body containerOut"><br>
-                               <div class="table-responsive" id="container">
-                                <?php while($nivers = mysqli_fetch_assoc($select_niver_financeiro)) {?>
-								  <div id="one" style="color: black;"><img src="<?php echo $nivers["foto"]; ?>" style="height: 150px; width: 150px;"><center><?php echo $nivers["nome_us"]; ?><br><?php echo date('d/m/Y',strtotime($nivers["dta_nasc"])); ?></center></div>
-								<?php
-								}?>
-                              </div>
-                            </div>
-                      </div>  
                 </div>
 
 
-            </div>
-
-
-
-
-
-
-
-
+                <!--Page Content-->
         </div>
         <!-- End of Content Wrapper -->
 
@@ -582,7 +507,3 @@
 
 </html>
 
-<?php
-    // Fechar conexao
-    mysqli_close($conexao);
-?>

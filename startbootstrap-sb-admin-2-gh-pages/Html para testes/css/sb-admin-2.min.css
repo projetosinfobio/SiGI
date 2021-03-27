@@ -145,6 +145,16 @@
 #bgtools{
     background-color:white;
 }
+body .texto_proj_detalhado {
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-right: 45%;
+    margin-left: 80px;
+    margin-top: 50px;
+} 
 
 image
 :root {
