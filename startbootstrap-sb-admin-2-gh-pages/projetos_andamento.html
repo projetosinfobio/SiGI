@@ -61,19 +61,16 @@
 
             <!-- Divider -->
             <hr class="sidebar-divider">
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
-                <h5 class="nav-link" href="file:///C:/Users/Macorélo/Desktop/SiGI/startbootstrap-sb-admin-2-gh-pages/reunioes.html" style="text-align: center">
-                    Projetos</h5>
-            </li>
+            <center><h4 style="color: white;"><b>Projetos</b></h4></center>
+            
 
             <!-- Divider -->
             <hr class="sidebar-divider">
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" id="otoaqui" href="index.html">
                     <!--<i class="fas fa-fw fa-tachometer-alt"></i>-->
-                    <span style="margin: 1rem">Em andamento</span>
+                    <span>Em andamento</span>
                 </a>
             </li>
             <!--
@@ -108,7 +105,7 @@
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                     <!--<i class="fas fa-fw fa-cog"></i>-->
-                    <span style="margin: 1rem">Finalizados</span>
+                    <span>Finalizados</span>
                 </a>
                 <!--<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
@@ -152,7 +149,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="charts.html">
                     <!--<i class="fas fa-fw fa-chart-area"></i>-->
-                    <span style="margin: 1rem">Documentos</span>
+                    <span>Documentos</span>
                 </a>
             </li>
 
@@ -173,7 +170,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="charts.html">
                     <!--<i class="fas fa-fw fa-chart-area"></i>-->
-                    <span style="margin: 1rem">Membros</span>
+                    <span>Membros</span>
                 </a>
             </li>
             <hr class="sidebar-divider d-none d-md-block">
@@ -181,7 +178,7 @@
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
                     <!--<i class="fas fa-fw fa-wrench"></i>-->
-                    <span style="margin: 1rem">Atas</span>
+                    <span>Atas</span>
                 </a>
                 <!--<div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
@@ -478,27 +475,41 @@
                         </li>
                     </ul>
                 </nav>
-                <div style="text-align: center">
-                    <hr2>Em andamento</hr2>
-                </div>
                 <div class="container-fluid">
+                <h1 class="h3 mb-4 text-gray-800">Em andamento</h1>
     <!-- PHPBemol    <?php while($proj_andamento = mysqli_fetch_assoc($select_proj_andamento)) {?> -->
                     <!-- Content Row -->
-                    <div class="row" style="float: left">
+                    <div class="row" style="float: center">
                         <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 mb-4">
+                        <!-- <div class="col-xl-3 mb-4"> -->
                         <!--       <div class="card border-left-primary shadow h-100 py-2" style="max-width: 180px"> -->
-                                <div class="card-body" style="padding: 0.8rem !important;">
-                                    <div class="col mr-2">
-                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"> <!-- PHPBemol <?php echo $proj_andamento["nome_proj"]; ?> -->
-                                        </div>
-                                    </div>
+                                <div class="card-body containerOut"><br>
+                                	<div class="card2 shadow mb-4">
+                    				<center>
+                        				<div class="table-responsive" id="containertools">                                                
+		                                <a class="tools">&nbsp;Projeto 1</a>
+		                                <a class="tools">&nbsp;Projeto 2</a>
+		                                <a class="tools">&nbsp;Projeto 3</a>
+		                                <a class="tools">&nbsp;Projeto 4</a>
+		                                <a class="tools">&nbsp;Projeto 5</a>
+		                                <a class="tools">&nbsp;Projeto 6</a>
+		                                <a class="tools">&nbsp;Projeto 7</a>
+		                                <a class="tools">&nbsp;Projeto 8</a>
+		                                <a class="tools">&nbsp;Projeto 9</a>
+		                                <a class="tools">&nbsp;Projeto 10</a>
+		                                <a class="tools">&nbsp;Projeto 11</a>
+		                                <a class="tools">&nbsp;Projeto 12</a>
+		                                <!-- PHPBemol <?php echo $proj_finalizado["nome_proj"]; ?>   -->             
+                        				</div>
+                    				</center>
+                    				</div>            
                                 </div>
-                            </div>
                         </div>
-                    </div>         
-<!-- PHPBemol		<?php
-                    }?>    -->                
+                    <!-- PHPBemol		<?php
+                    }?>    -->
+                    </div>
+            </div>         
+                
                    
                     
                 </div>

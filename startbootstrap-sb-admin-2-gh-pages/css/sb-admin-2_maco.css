@@ -12,10 +12,10 @@
 .row {
     display: flex;
     flex-wrap: wrap;
-    /*justify-content:center;*/
+    justify-content:center;
     background-position: center;
     opacity: 100%;
-    margin-top: 40px;
+    margin-top: 25px;
 
 }
 
@@ -49,11 +49,9 @@
     margin-left: 40px;
 }
 
-/*#otoaqui{
-    color:black;
-    background-image: linear-gradient(180deg, #d9d9d9 10%, #a6a6a6 100%);
-    
-}*/
+#otoaqui{
+    background-color: #0e9931; 
+}
 
 #formAlt {
     background-color: #ffffff;
@@ -69,7 +67,7 @@
 }
 
 #content {
-    background-color: #d9d9d9;
+    background-color: #ffffff;
 }
 
 #separator {
@@ -10765,6 +10763,39 @@ a:focus {
 
 #wrapper #content-wrapper #content {
     flex: 1 0 auto
+}
+
+.containerOut{
+    display: grid;
+    grid-template-columns: 1050px;
+    justify-content: center;
+    margin-top: -20px;
+    width: 100%;
+  }
+
+#containertools{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3,160px);    
+    grid-column-gap: 30px;
+    grid-row-gap: 40px;
+    padding-top:30px;
+    padding-bottom:30px;
+    color: black;
+  }
+
+.tools{
+    border-radius:0.4rem;
+    border: 1px solid;
+    border-color: black;
+    padding: 10px;
+    background-color:#d9d9d9;
+    width:140px;
+
+}
+
+.tools:hover {
+    background-color: #0e9931;
 }
 
 .container,
