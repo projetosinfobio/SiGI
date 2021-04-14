@@ -10818,6 +10818,15 @@ body {
     height: 100%
 }
 
+body .foto_membros {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 110px);
+    grid-column-gap: 130px;
+    grid-row-gap: 50px;
+    padding: 80px;
+}
+
 a:focus {
     outline: 0
 }
