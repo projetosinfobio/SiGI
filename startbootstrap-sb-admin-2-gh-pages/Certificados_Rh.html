@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SiGi - Gerar Relatório</title>
+    <title>SiGi - Gerar Certificado</title>
     <link rel="icon" href="img/logo.png">
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -115,7 +115,7 @@
 
 
            <!-- Nav Item - Utilities Collapse Menu -->
-           <li class="nav-item">
+           <li class="nav-item" id="predo">
             <a class="nav-link collapsed" href="#" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
 
                 <span>Certificado</span>
@@ -475,42 +475,23 @@
                 </nav>
 
                <!-- Begin Page Content -->
-               <h1 class="h3 mb-4 text-gray-800 gambiarra-pedro">Relatórios</h1>
+               <h1 class="h3 mb-4 text-gray-800 gambiarra-pedro">Gerar Certificado</h1>
                <div class="container-fluid-relatorio">
                
                 <div class="card shadow mb-4">
                  <div class="card-body">
                     <div class="table-responsive">
                       <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                       
-            
-                        <h1 class="h5 mb-4 text-gray-800">Documentos: &nbsp;&nbsp;&nbsp;
-                            <select name="dataTable_length" aria-controls="dataTable" class="custom-select-pedro custom-select-sm form-control form-control-sm">
-                                <option >Selecione o Documento</option>
-                                <option >Documento 1</option>
-                                <option >Documento 2</option>
-                                <option >Documento 3</option>
-                                <option >Documento 4</option>
-                            </select>
-                        </h1>
-
-                        <div>
-                            <h1  class="h5 mb-4 text-gray-800">Data: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                              <input id="date" type="date" class="custom-select-pedro2 custom-select-sm form-control form-control-sm" name="dataTable_length" aria-controls="dataTable">
-                              &nbsp;&nbsp;&nbsp;até&nbsp;&nbsp;&nbsp;
-                              <input id="date" type="date" class="custom-select-pedro2 custom-select-sm form-control form-control-sm" name="dataTable_length" aria-controls="dataTable">
-                                  
-                              
-
+                        <form class="frmalteracao-pedro cor-pedro" style="color:black;">
+                            <h1 class="h5 mb-4 text-gray-800">
+                            &nbsp;&nbsp;Número USP:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" class="form-group-arredondado-pedro" ><br><br>
+                            &nbsp;&nbsp;Data de Desligamento: &nbsp; <input type="text" class="form-group-arredondado-pedro" placeholder="AAAA-MM-DD"><br><br>
                             </h1>
-                        </div>
-                    
-
-                      </table>  
-                    </div>
+                        </form>
+                      </table>
 
                       <a href="#" class="btn btn-primary btn-icon-split btn-sm teste-pedro-rel" >
-                        <span class="text">Gerar PDF</span>
+                        <span class="text">Gerar Certificado</span>
                       </a>
                  </div>
                 </div>
