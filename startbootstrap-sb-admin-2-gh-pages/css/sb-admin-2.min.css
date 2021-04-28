@@ -94,6 +94,20 @@
 
 }
 
+.form-group-arredondado2 {
+    display:flex; 
+    padding-left: 0.4rem;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 400;  
+    background-clip: padding-box;    
+    border-radius: 10rem;
+    border: 1px solid;
+    border-color:#6e707e;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    padding-left: 500px;
+}
+
 
 #container{
     display: grid;
