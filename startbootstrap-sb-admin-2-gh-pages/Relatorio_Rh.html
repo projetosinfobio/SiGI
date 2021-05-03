@@ -9,14 +9,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SiGi - Start Page</title>
+    <title>SiGi - Gerar Relatório</title>
     <link rel="icon" href="img/logo.png">
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css/sb-admin-2-pedro.min.css" rel="stylesheet">
     <link rel="stylesheet" href="scss/navs/_sidebar.scss">
     <link rel="stylesheet" href="scss/navs/_global.scss">
     <link rel="stylesheet" href="scss/navs/_topbar.scss">
@@ -44,9 +44,10 @@
             <hr class="sidebar-divider">
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="index.html">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Botão 1</span></a>
+                <!-- Tirei o href as demais classes-->
+                <a class="nav-link-pedro" >
+
+                    <h4><b>RH</b></h4></a>
             </li>
 <!--
             <li class="nav-item active">
@@ -79,8 +80,7 @@
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>Botão 2</span>
+                    <span>Gerenciar Membros</span>
                 </a>
                 <!--<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
@@ -97,8 +97,8 @@
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Botão 3</span>
+
+                    <span>Avaliações</span>
                 </a>
                 <!--<div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
@@ -111,7 +111,16 @@
         </div>-->
             </li>
 
-            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+
+           <!-- Nav Item - Utilities Collapse Menu -->
+           <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+
+                <span>Certificado</span>
+            </a>      
+           </li>
             <hr class="sidebar-divider">
 
             <!-- Heading 
@@ -142,8 +151,7 @@
             <!-- Nav Item - Charts -->
             <li class="nav-item">
                 <a class="nav-link" href="charts.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Botão 4</span></a>
+                    <span>Documentos</span></a>
             </li>
 
             <!-- Nav Item - Tables 
@@ -152,7 +160,28 @@
           <i class="fas fa-fw fa-table"></i>
           <span>Tables</span></a>
       </li>-->
+            <!-- Divider -->
+            <hr class="sidebar-divider">
 
+
+           <!-- Nav Item - Utilities Collapse Menu -->
+           <li class="nav-item" id="predo">
+            <a class="nav-link collapsed" href="#" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+
+                <span>Relatórios</span>
+            </a>      
+           </li>
+            <!-- Divider -->
+            <hr class="sidebar-divider">    
+
+
+           <!-- Nav Item - Utilities Collapse Menu -->
+           <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+
+                <span>Membros</span>
+            </a>      
+           </li>            
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
@@ -445,18 +474,52 @@
 
                 </nav>
 
+               <!-- Begin Page Content -->
+               <h1 class="h3 mb-4 text-gray-800 gambiarra-pedro">Relatórios</h1>
+               <div class="container-fluid-relatorio">
+               
+                <div class="card shadow mb-4">
+                 <div class="card-body">
+                    <div class="table-responsive">
+                      <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                       
+            
+                        <h1 class="h5 mb-4 text-gray-800">Documentos: &nbsp;&nbsp;&nbsp;
+                            <select name="dataTable_length" aria-controls="dataTable" class="custom-select-pedro custom-select-sm form-control form-control-sm">
+                                <option >Selecione o Documento</option>
+                                <option >Documento 1</option>
+                                <option >Documento 2</option>
+                                <option >Documento 3</option>
+                                <option >Documento 4</option>
+                            </select>
+                        </h1>
 
+                        <div>
+                            <h1  class="h5 mb-4 text-gray-800">Data: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                              <input id="date" type="date" class="custom-select-pedro2 custom-select-sm form-control form-control-sm" name="dataTable_length" aria-controls="dataTable">
+                              &nbsp;&nbsp;&nbsp;até&nbsp;&nbsp;&nbsp;
+                              <input id="date" type="date" class="custom-select-pedro2 custom-select-sm form-control form-control-sm" name="dataTable_length" aria-controls="dataTable">
+                                  
+                              
 
+                            </h1>
+                        </div>
+                    
 
+                      </table>  
+                    </div>
 
-
-
-
-
+                      <a href="#" class="btn btn-primary btn-icon-split btn-sm teste-pedro-rel2" >
+                        <span class="text">Gerar PDF</span>
+                      </a>
+                 </div>
+                </div>
+               </div>
         </div>
         <!-- End of Content Wrapper -->
 
     </div>
+
     <!-- End of Page Wrapper -->
 
     <!-- Scroll to Top Button-->
@@ -492,7 +555,16 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
+    <script>
+         function popupAddReu() {
+            if (document.getElementById("popup-pedro").classList.contains('d-none'))
+                document.getElementById("popup-pedro").classList.toggle('d-flex');
+            else
+                document.getElementById("popup-pedro").classList.toggle('d-none');
+        }
+    </script>
 
+    
 </body>
 
 </html>

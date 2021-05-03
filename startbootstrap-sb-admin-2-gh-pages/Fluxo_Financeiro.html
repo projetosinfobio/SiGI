@@ -9,14 +9,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SiGi - Start Page</title>
+    <title>SiGi - Fluxo Financeiro</title>
     <link rel="icon" href="img/logo.png">
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css/sb-admin-2-pedro.min.css" rel="stylesheet">
     <link rel="stylesheet" href="scss/navs/_sidebar.scss">
     <link rel="stylesheet" href="scss/navs/_global.scss">
     <link rel="stylesheet" href="scss/navs/_topbar.scss">
@@ -44,9 +44,10 @@
             <hr class="sidebar-divider">
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="index.html">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Botão 1</span></a>
+                <!-- Tirei o href as demais classes-->
+                <a class="nav-link-pedro" >
+
+                    <h4><b>Financeiro</b></h4></a>
             </li>
 <!--
             <li class="nav-item active">
@@ -77,10 +78,9 @@
       </div>-->
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
+            <li class="nav-item" id="predo">
                 <a class="nav-link collapsed" href="#" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>Botão 2</span>
+                    <span>Fluxo Financeiro</span>
                 </a>
                 <!--<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
@@ -97,8 +97,8 @@
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Botão 3</span>
+
+                    <span>Troca de Gestão</span>
                 </a>
                 <!--<div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
@@ -142,8 +142,7 @@
             <!-- Nav Item - Charts -->
             <li class="nav-item">
                 <a class="nav-link" href="charts.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Botão 4</span></a>
+                    <span>Relatórios</span></a>
             </li>
 
             <!-- Nav Item - Tables 
@@ -152,7 +151,28 @@
           <i class="fas fa-fw fa-table"></i>
           <span>Tables</span></a>
       </li>-->
+            <!-- Divider -->
+            <hr class="sidebar-divider">
 
+
+           <!-- Nav Item - Utilities Collapse Menu -->
+           <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+
+                <span>Documentos</span>
+            </a>      
+           </li>
+            <!-- Divider -->
+            <hr class="sidebar-divider">    
+
+
+           <!-- Nav Item - Utilities Collapse Menu -->
+           <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+
+                <span>Membros</span>
+            </a>      
+           </li>            
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
@@ -445,18 +465,96 @@
 
                 </nav>
 
+               <!-- Begin Page Content -->
+               <div class="container-fluid">
+                <h1 class="h3 mb-4 text-gray-800">Fluxo Financeiro</h1>
+                <div class="card shadow mb-4">
 
 
+               <!--Pop up Adicionar Movimentação-->
+                 <div id="popup-pedro" class="d-none">
+                    <form class="frmalteracao-pedro" style="color:black;">
+                        &nbsp;&nbsp;Valor:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" class="form-group-arredondado-pedro" placeholder="R$"><br><br>
+                        &nbsp;&nbsp;Data: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" class="form-group-arredondado-pedro" placeholder="AAAA-MM-DD"><br><br>
+                        &nbsp;&nbsp;Motivo:&nbsp;&nbsp;&nbsp;&nbsp; <textarea class="form-group-arredondado-pedro" rows="2"></textarea><br><br><br>
+
+                          <a href="Fluxo_Financeiro.html" class="btn btn-primary btn-icon-split btn-sm" >
+                            <span class="text">Adicionar</span>
+                          </a>
+
+                          <a href="Fluxo_Financeiro.html" class="btn btn-primary btn-icon-split btn-sm teste-pedro" >
+                            <span class="text">Cancelar</span>
+                          </a>
+                 </div>
+               <!--Fim do Pop up de Adicionar Movimentação-->
 
 
-
-
-
-
+                 <div class="card-body">
+                    <div class="table-responsive">
+                      <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+                          <tr>
+                            <th>Data</th>
+                            <th>Entrada</th>
+                            <th>Saída</th>
+                            <th>Balanço</th>
+                            <th>Descrição</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                              <td>01/01/2018</td>
+                              <td>100.00</td>
+                              <td>0</td>
+                              <td>100.00</td>
+                              <td>Doação</td>
+                            </tr>
+                            <tr>
+                              <td>20/02/2018</td>
+                              <td>0</td>
+                              <td>25.00</td>
+                              <td>75.00</td>
+                              <td>Cartório</td>
+                            </tr>
+                            <tr>
+                              <td>30/03/2018</td>
+                              <td>0</td>
+                              <td>15.00</td>
+                              <td>60.00</td>
+                              <td>Imersão</td>
+                            </tr>
+                            <tr>
+                              <td>01/07/2018</td>
+                              <td>500</td>
+                              <td>0</td>
+                              <td>560.00</td>
+                              <td>Pagamento Projeto 3</td>
+                            </tr>
+                            <tr>
+                              <td>TOTAL</td>
+                              <td>600.00</td>
+                              <td>40.00</td>
+                              <td>560.00</td>
+                              <td> </td>
+                            </tr>
+                          </tbody>
+                      </table>  
+                    </div>
+                    <a href="#" class="btn btn-primary btn-icon-split btn-sm" onclick="popupAddReu()">
+                        <span class="text">Adicionar Movimentação</span>
+                      </a>
+    
+                      <a href="#" class="btn btn-primary btn-icon-split btn-sm teste-pedro" >
+                        <span class="text">Gerar Relatório</span>
+                      </a>
+                  </div>
+                </div>
+               </div>
         </div>
         <!-- End of Content Wrapper -->
 
     </div>
+
     <!-- End of Page Wrapper -->
 
     <!-- Scroll to Top Button-->
@@ -492,7 +590,16 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
+    <script>
+         function popupAddReu() {
+            if (document.getElementById("popup-pedro").classList.contains('d-none'))
+                document.getElementById("popup-pedro").classList.toggle('d-flex');
+            else
+                document.getElementById("popup-pedro").classList.toggle('d-none');
+        }
+    </script>
 
+    
 </body>
 
 </html>
