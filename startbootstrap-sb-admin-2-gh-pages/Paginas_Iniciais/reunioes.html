@@ -36,7 +36,6 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
     <link href="css/sb-admin-2-renan.min.css" rel="stylesheet">
     <link rel="stylesheet" href="scss/navs/_sidebar.scss">
     <link rel="stylesheet" href="scss/navs/_global.scss">
@@ -96,8 +95,7 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" id="otoaqui" href="reunioes_gerenciar.html" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
+                <a class="nav-link collapsed"  href="reunioes_gerenciar.html" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                     <span>Gerenciar</span>
                 </a>
                 <!--<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
@@ -466,7 +464,6 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-                    <h1 class="h3 mb-4 text-gray-800">Criar Reunião</h1>
                     <!--Outra tabela pra curso-->
                     <div class="card shadow mb-4">
                         
@@ -481,10 +478,49 @@
                                 <th>Diretoria</th>
                                 <th>Data</th>
                                 <th>Ata</th>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>Reunião ordinária</td>
+                                    <td>DD/MM/AAAA</td>
+                                    <td>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>Projetos</td>
+                                    <td>DD/MM/AAAA</td>
+                                    <td>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>Qualidade</td>
+                                    <td>DD/MM/AAAA</td>
+                                    <td>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>Recursos </td>
+                                    <td>DD/MM/AAAA</td>
+                                    <td>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>Marketing</td>
+                                    <td>DD/MM/AAAA</td>
+                                    <td>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>Financeiro</td>
+                                    <td>DD/MM/AAAA</td>
+                                    <td>
+                                    </td>
+                                  </tr>
                               </tr>
                             </thead>
-                            <tbody>
-                            <?php while($reuniao = mysqli_fetch_assoc($select_reuniao)) {?>
+                          <!--PHP ATAS
+                                 <tbody>
+                           <?php while($reuniao = mysqli_fetch_assoc($select_reuniao)) {?>
                               <tr>
                                 <td> <?php
                                          if($reuniao["id_dir"]==6){
@@ -497,7 +533,7 @@
                                 <td><a href=<?php echo $reuniao["ata"];?>> Abrir </a></td>
                               </tr>
 							<?php } ?>
-                            </tbody>  
+                            </tbody> --> 
                           </table>  
                         </div>
                       </div>
