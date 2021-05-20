@@ -9,14 +9,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SiGi - Documentação Projetos</title>
+    <title>SiGi - Documentação</title>
     <link rel="icon" href="img/logo.png">
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css/sb-admin-2-pedro.min.css" rel="stylesheet">
     <link rel="stylesheet" href="scss/navs/_sidebar.scss">
     <link rel="stylesheet" href="scss/navs/_global.scss">
     <link rel="stylesheet" href="scss/navs/_topbar.scss">
@@ -42,13 +42,12 @@
 
             <!-- Divider -->
             <hr class="sidebar-divider">
-            <center><h4 style="color:white;"><b>Projetos</b></h4></center>  
-            <!-- Divider -->
-            <hr class="sidebar-divider">
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="index.html">
-                    <span>Em andamento</span></a>
+                <!-- Tirei o href as demais classes-->
+                <a class="nav-link-pedro" >
+
+                    <h4><b>RH</b></h4></a>
             </li>
 <!--
             <li class="nav-item active">
@@ -80,8 +79,8 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                    <span>Finalizados</span>
+                <a class="nav-link collapsed" href="rh_gerenciar_membros.html" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    <span>Gerenciar Membros</span>
                 </a>
                 <!--<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
@@ -97,8 +96,9 @@
 
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" id="otoaqui" href="#" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-                    <span>Documentos</span>
+                <a class="nav-link collapsed" href="#" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+
+                    <span>Avaliações</span>
                 </a>
                 <!--<div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
@@ -111,7 +111,16 @@
         </div>-->
             </li>
 
-            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+
+           <!-- Nav Item - Utilities Collapse Menu -->
+           <li class="nav-item">
+            <a class="nav-link collapsed" href="Certificados_Rh.html" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+
+                <span>Certificado</span>
+            </a>      
+           </li>
             <hr class="sidebar-divider">
 
             <!-- Heading 
@@ -140,39 +149,33 @@
       </li> -->
 
             <!-- Nav Item - Charts -->
-            <li class="nav-item">
-                <a class="nav-link" href="charts.html">
-                    <span>Membros</span></a>
-            </li>
+           <li class="nav-item" id="predo">
+            <a class="nav-link collapsed" href="documentacao_rh.html" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
 
-            <!-- Nav Item - Tables 
-      <li class="nav-item">
-        <a class="nav-link" href="tables.html">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Tables</span></a>
-      </li>-->
+                <span>Documentos</span>
+            </a>      
+           </li>
+            <hr class="sidebar-divider">
 
+
+           <!-- Nav Item - Utilities Collapse Menu -->
+           <li class="nav-item">
+            <a class="nav-link collapsed" href="Relatorio_Rh.html" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+
+                <span>Relatórios</span>
+            </a>      
+           </li>
             <!-- Divider -->
-            <hr class="sidebar-divider d-none d-md-block">
+            <hr class="sidebar-divider">    
 
-            <!-- Sidebar Toggler (Sidebar) -->
-            <!--<div class="text-center d-none d-md-inline">
-                <button class="rounded-circle border-0" id="sidebarToggle"></button>
-            </div>-->
 
-             <!-- Nav Item - Charts -->
-             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
-                    <span>Atas</span></a>
-            </li>
+           <!-- Nav Item - Utilities Collapse Menu -->
+           <li class="nav-item">
+            <a class="nav-link collapsed" href="membros_rh.html" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
 
-            <!-- Nav Item - Tables 
-      <li class="nav-item">
-        <a class="nav-link" href="tables.html">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Tables</span></a>
-      </li>-->
-
+                <span>Membros</span>
+            </a>      
+           </li>            
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
@@ -469,49 +472,41 @@
 
                 </nav>
 
-                <div class="card-body">
-                    <div class="card-body containerOut"><br>
-                        <div class="card shadow mb-4">
-                            <center>
-                                <h1 style="padding-top: 20px;">Documentos</h1>
-                            </center>      
-                            <div class="table-responsive" id="tabela-doc">
-                                <table width="100%">
-                                    <thead>
-                                    <tr class="borda-tabela" style="background-color: #acacac8e;">
-                                        <th class="borda-tabela">Documento</th>
-                                        <th>Data</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="borda-tabela">
-                                            <td class="borda-tabela">Regimento</td>
-                                            <td></td>
-                                        </tr>
-                                    
-                                        <tr class="borda-tabela" style="background-color: #acacac8e;">
-                                            <td class="borda-tabela">Senhas</td>
-                                            <td></td>
-                                        </tr>
+                <div class="container-fluid">
 
-                                        <tr class="borda-tabela">
-                                            <td class="borda-tabela">Metas</td>
-                                            <td></td>
-                                        </tr>
-                                    </tbody>
-                                </table>  
-                                <div style="padding-top: 50px; padding-bottom: 30px;">
-                                <a href="#" class="btn btn-primary btn-icon-split btn-sm" onclick="popupAddReu()">
-                                    <span class="text">Adicionar documento</span>
-                                </a>
-                                </div>
-                            </div>
-                        
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-4 text-gray-800">Documentos</h1>
+                    <div class="card shadow mb-4">
+                      <div class="card-body">
+                        <div class="table-responsive">
+                          <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                            <thead>
+                              <tr>
+                                <th>Documento</th>
+                                <th>Data</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                  <td>Regimento</td>
+                                  <td>14/04/2020</td>
+                                </tr>
+                                <tr>
+                                  <td>Ata</td>
+                                  <td>03/09/2020</td>
+                                </tr>
+                                <tr>
+                                  <td>Metas 2021</td>
+                                  <td>21/12/2020</td>
+                                </tr>
+                              </tbody>
+                          </table>    
+                       <a href="#" class="btn btn-primary-right btn-icon-split btn-sm" >
+                        <span class="text">Adicionar documento</span>
+                      </a>
                         </div>
-                    </div>
-                </div>
-
-        </div>
+                      </div>
+                </div> 
         <!-- End of Content Wrapper -->
 
     </div>

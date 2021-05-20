@@ -9,14 +9,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SiGi - Membros Recursos Humanos</title>
+    <title>SiGi - Membros RH</title>
     <link rel="icon" href="img/logo.png">
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css/sb-admin-2-pedro.min.css" rel="stylesheet">
     <link rel="stylesheet" href="scss/navs/_sidebar.scss">
     <link rel="stylesheet" href="scss/navs/_global.scss">
     <link rel="stylesheet" href="scss/navs/_topbar.scss">
@@ -40,14 +40,14 @@
 
             <!-- ----------------------------------------------------------------------------------------------------- -->
 
-            <hr class="sidebar-divider">
-            <center><h4 style="color:white;"><b>RH</b></h4></center>  
             <!-- Divider -->
             <hr class="sidebar-divider">
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="index.html">
-                    <span>&nbsp;Gerenciar Membros</span></a>
+                <!-- Tirei o href as demais classes-->
+                <a class="nav-link-pedro" >
+
+                    <h4><b>RH</b></h4></a>
             </li>
 <!--
             <li class="nav-item active">
@@ -79,8 +79,8 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                    <span>&nbsp;Avaliações</span>
+                <a class="nav-link collapsed" href="rh_gerenciar_membros.html" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    <span>Gerenciar Membros</span>
                 </a>
                 <!--<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
@@ -97,7 +97,8 @@
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-                    <span>&nbsp;Certificado</span>
+
+                    <span>Avaliações</span>
                 </a>
                 <!--<div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
@@ -110,45 +111,16 @@
         </div>-->
             </li>
 
-            <!-- Divider -->
             <hr class="sidebar-divider">
 
-              <!-- Nav Item - Utilities Collapse Menu -->
-              <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-                    <span>&nbsp;Documentos</span>
-                </a>
-                <!--<div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Custom Utilities:</h6>
-            <a class="collapse-item" href="utilities-color.html">Colors</a>
-            <a class="collapse-item" href="utilities-border.html">Borders</a>
-            <a class="collapse-item" href="utilities-animation.html">Animations</a>
-            <a class="collapse-item" href="utilities-other.html">Other</a>
-          </div>
-        </div>-->
-            </li>
 
-            <!-- Divider -->
-            <hr class="sidebar-divider">
+           <!-- Nav Item - Utilities Collapse Menu -->
+           <li class="nav-item">
+            <a class="nav-link collapsed" href="Certificados_Rh.html" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
 
-              <!-- Nav Item - Utilities Collapse Menu -->
-              <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-                    <span>&nbsp;Relatórios</span>
-                </a>
-                <!--<div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Custom Utilities:</h6>
-            <a class="collapse-item" href="utilities-color.html">Colors</a>
-            <a class="collapse-item" href="utilities-border.html">Borders</a>
-            <a class="collapse-item" href="utilities-animation.html">Animations</a>
-            <a class="collapse-item" href="utilities-other.html">Other</a>
-          </div>
-        </div>-->
-            </li>
-
-            <!-- Divider -->
+                <span>Certificado</span>
+            </a>      
+           </li>
             <hr class="sidebar-divider">
 
             <!-- Heading 
@@ -177,18 +149,33 @@
       </li> -->
 
             <!-- Nav Item - Charts -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" id="otoaqui" href="#" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                    <span>&nbsp;Membros</span></a>
-            </li>
+           <li class="nav-item">
+            <a class="nav-link collapsed" href="documentacao_rh.html" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
 
-            <!-- Nav Item - Tables 
-      <li class="nav-item">
-        <a class="nav-link" href="tables.html">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Tables</span></a>
-      </li>-->
+                <span>Documentos</span>
+            </a>      
+           </li>
+            <hr class="sidebar-divider">
 
+
+           <!-- Nav Item - Utilities Collapse Menu -->
+           <li class="nav-item">
+            <a class="nav-link collapsed" href="Relatorio_Rh.html" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+
+                <span>Relatórios</span>
+            </a>      
+           </li>
+            <!-- Divider -->
+            <hr class="sidebar-divider">    
+
+
+           <!-- Nav Item - Utilities Collapse Menu -->
+           <li class="nav-item" id="predo">
+            <a class="nav-link collapsed" href="membros_rh.html" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+
+                <span>Membros</span>
+            </a>      
+           </li>            
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
@@ -486,40 +473,109 @@
                 </nav>
 
                 <!--Page Content-->
-                    <!--Page Content-->
-                    <div class="container-fluid">
-                        <h1 class="h3 mb-4 text-gray-800">Membros</h1>
-                        <div class="card-body containerOut"><br>
-                            <div class="card shadow mb-4">
-                                <div class="foto_membros">
-                                    <figure>
-                                        <img src="#" alt="Fulano1">
-                                        <p>Fulano1</p>
-                                    </figure>
-                                    <figure>
-                                        <img src="#" alt="Fulano2">
-                                        <p>Fulano2</p>
-                                    </figure>
-                                    <figure>    
-                                        <img src="#" alt="Fulano3">
-                                        <p>Fulano3</p>
-                                    </figure>
-                                    <figure>
-                                        <img src="#" alt="Fulano4">
-                                        <p>Fulano4</p>
-                                    </figure>
-                                    <figure>
-                                        <img src="#" alt="Fulano5">
-                                        <p>Fulano5</p>
-                                    </figure>
-                                    <figure>    
-                                        <img src="#" alt="Fulano6">
-                                        <p>Fulano6</p>
-                                    </figure>
-                                </div>
-                            </div>
+                <div class="container-fluid">
+                    <h1 class="h3 mb-4 text-gray-800">Membros</h1>
+
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                          <h6 class="m-0 font-weight-bold text-primary">Recursos Humanos</h6>
                         </div>
-                    </div>
+                        <div class="card-body containerOut"><br>
+                          <div class="table-responsive" id="container-2">
+                            <!--<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">-->
+                              <div id="one" style="color: #696969;">
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100"></center>
+                                <center>
+                                    Fulano 0
+                              </center>
+                             </div>
+                              <div id="one" style="color: #696969;">
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100"><center>
+                                <center> 
+                                    Fulano 1
+                              </center>
+                              </div> 
+                              <div id="one" style="color: #696969;">
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100"></center>
+                                <center> 
+                                    Fulano 2
+                              </center>
+                              </div> 
+                              <div id="one" style="color: #696969;">
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100"></center>
+                                <center> 
+                                    Fulano 3
+                              </center> 
+                              </div>
+                              <div id="one" style="color: #696969;">
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100"></center>
+                                <center> 
+                                    Fulano 4
+                              </center> <br><br>
+                              </div>
+                              <div id="one" style="color: #696969;">
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100"></center>
+                                <center> 
+                                    Fulano 5
+                              </center>
+                              </div>                              
+                              <div id="one" style="color: #696969;">
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100"></center>
+                                <center> 
+                                    Fulano 6
+                              </center>
+                              </div>
+                              <div id="one" style="color: #696969;">
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100"></center>
+                                <center> 
+                                    Fulano 7
+                              </center>
+                              </div> 
+                              <div id="one" style="color: #696969;">
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100"></center>
+                                <center> 
+                                    Fulano 8
+                              </center><br><br>
+                              </div>
+                              <div id="one" style="color: #696969;">
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100"></center>
+                                <center> 
+                                    Fulano 9
+                              </center>
+                              </div> 
+                              <div id="one" style="color: #696969;">
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100"></center>
+                                <center> 
+                                    Fulano 10
+                              </center>
+                              </div> 
+                              <div id="one" style="color: #696969;">
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100"></center>
+                                <center> 
+                                    Fulano 11
+                              </center>
+                              </div>
+                              <div id="one" style="color: #696969;">
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100"></center>
+                                <center> 
+                                    Fulano 12
+                              </center>
+                              </div>
+                              <div id="one" style="color: #696969;">
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100"></center>
+                                <center> 
+                                    Fulano 13
+                              </center>
+                              </div>                              
+                              <div id="one" style="color: #696969;">
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100"></center>
+                                <center> 
+                                    Fulano 14
+                              </center><br><br>                            
+                          </div>
+                        </div>
+                    </div>  
+                <!--Page Content-->
         </div>
         <!-- End of Content Wrapper -->
 
