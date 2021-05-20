@@ -1,0 +1,134 @@
+(HTML)
+aqui no caso é só mudar o texto do <h1> pra Membros
+não esqueçam de colocar a imagem icone-do-usuario.png na pasta de fotos da diretoria de vocês
+depois no </nav>
+
+                <!--Page Content-->
+                <div class="container-fluid">
+                    <h1 class="h3 mb-4 text-gray-800">Gerenciar membros</h1>
+
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                          <h6 class="m-0 font-weight-bold text-primary">Todos os membros</h6>
+                        </div>
+                        <div class="card-body containerOut"><br>
+                          <div class="table-responsive" id="container-2">
+                            <!--<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">-->
+                              <div id="one" style="color: #696969;">
+                                <center><img src="fotos/icone-do-usuario.png" height="100" width="100"></center>
+                                <center>
+                                    Fulano 0
+                              </center>
+                             </div>
+                              <div id="one" style="color: #696969;">
+                                <center><img src="fotos/icone-do-usuario.png" height="100" width="100"><center>
+                                <center> 
+                                    Fulano 1
+                              </center>
+                              </div> 
+                              <div id="one" style="color: #696969;">
+                                <center><img src="fotos/icone-do-usuario.png" height="100" width="100"></center>
+                                <center> 
+                                    Fulano 2
+                              </center>
+                              </div> 
+                              <div id="one" style="color: #696969;">
+                                <center><img src="fotos/icone-do-usuario.png" height="100" width="100"></center>
+                                <center> 
+                                    Fulano 3
+                              </center> 
+                              </div>
+                              <div id="one" style="color: #696969;">
+                                <center><img src="fotos/icone-do-usuario.png" height="100" width="100"></center>
+                                <center> 
+                                    Fulano 4
+                              </center> <br><br>
+                              </div>
+                              <div id="one" style="color: #696969;">
+                                <center><img src="fotos/icone-do-usuario.png" height="100" width="100"></center>
+                                <center> 
+                                    Fulano 5
+                              </center>
+                              </div>                              
+                              <div id="one" style="color: #696969;">
+                                <center><img src="fotos/icone-do-usuario.png" height="100" width="100"></center>
+                                <center> 
+                                    Fulano 6
+                              </center>
+                              </div>
+                              <div id="one" style="color: #696969;">
+                                <center><img src="fotos/icone-do-usuario.png" height="100" width="100"></center>
+                                <center> 
+                                    Fulano 7
+                              </center>
+                              </div> 
+                              <div id="one" style="color: #696969;">
+                                <center><img src="fotos/icone-do-usuario.png" height="100" width="100"></center>
+                                <center> 
+                                    Fulano 8
+                              </center><br><br>
+                              </div>
+                              <div id="one" style="color: #696969;">
+                                <center><img src="fotos/icone-do-usuario.png" height="100" width="100"></center>
+                                <center> 
+                                    Fulano 9
+                              </center>
+                              </div> 
+                              <div id="one" style="color: #696969;">
+                                <center><img src="fotos/icone-do-usuario.png" height="100" width="100"></center>
+                                <center> 
+                                    Fulano 10
+                              </center>
+                              </div> 
+                              <div id="one" style="color: #696969;">
+                                <center><img src="fotos/icone-do-usuario.png" height="100" width="100"></center>
+                                <center> 
+                                    Fulano 11
+                              </center>
+                              </div>
+                              <div id="one" style="color: #696969;">
+                                <center><img src="fotos/icone-do-usuario.png" height="100" width="100"></center>
+                                <center> 
+                                    Fulano 12
+                              </center>
+                              </div>
+                              <div id="one" style="color: #696969;">
+                                <center><img src="fotos/icone-do-usuario.png" height="100" width="100"></center>
+                                <center> 
+                                    Fulano 13
+                              </center>
+                              </div>                              
+                              <div id="one" style="color: #696969;">
+                                <center><img src="fotos/icone-do-usuario.png" height="100" width="100"></center>
+                                <center> 
+                                    Fulano 14
+                              </center><br><br>                            
+                          </div>
+                        </div>
+                    </div>  
+                <!--Page Content-->
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+(CSS)
+eu to usando o do pedro de novo, mas adicionei o seguinte: 
+
+#container-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-right: .75rem;
+    padding-left: .75rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#one {
+    display: inline-block;
+    flex: 0 1 calc(20% - 8px);
+}

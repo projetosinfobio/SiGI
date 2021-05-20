@@ -2630,33 +2630,33 @@ fieldset:disabled a.btn {
 .btn-primary:hover {
     color: #fff;
     background-color: #0e9931;/*MUDA A COR DE HOVER DO BTN LOGIN*/
-    border-color:#08591c
+    border-color:#08591c;
 }
 
 .btn-primary.focus,
 .btn-primary:focus {
-    box-shadow: 0 0 0 .2rem rgba(105, 136, 228, .5)
+    box-shadow: 0 0 0 .2rem #08591c;
 }
 
 .btn-primary.disabled,
 .btn-primary:disabled {
     color: #fff;
-    background-color: #4e73df;
-    border-color: #4e73df
+    background-color: #0e9931;
+    border-color: #08591c;
 }
 
 .btn-primary:not(:disabled):not(.disabled).active,
 .btn-primary:not(:disabled):not(.disabled):active,
 .show > .btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #2653d4;
-    border-color: #244ec9
+    background-color: #0e9931;
+    border-color: #08591c;
 }
 
 .btn-primary:not(:disabled):not(.disabled).active:focus,
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .show > .btn-primary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 .2rem rgba(105, 136, 228, .5)
+    box-shadow: 0 0 0 .2rem #08591c;
 }
 
 .btn-secondary {
@@ -12416,4 +12416,28 @@ body.sidebar-toggled footer.sticky-footer {
 
 .cor-pedro {
     color: black;
+}
+
+.btn-primary-right {
+    color: #fff;
+    background-color: #008000;
+    border-color:#08591c;
+    float: right;
+}
+
+#container-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-right: .75rem;
+    padding-left: .75rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#one {
+    display: inline-block;
+    flex: 0 1 calc(20% - 8px);
 }
