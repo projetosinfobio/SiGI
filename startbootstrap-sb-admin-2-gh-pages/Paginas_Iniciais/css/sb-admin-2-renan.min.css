@@ -2745,6 +2745,19 @@ fieldset:disabled a.btn {
     box-shadow: 0 0 0 .2rem rgba(105, 136, 228, .5)
 }
 
+.btn-primary-center {
+    color: #fff;
+    background-color: #008000;
+    border-color:#08591c;
+    float: center;
+}
+
+.btn-primary-right:hover {
+    color: #fff;
+    background-color: #0e9931;/*MUDA A COR DE HOVER DO BTN LOGIN*/
+    border-color: black;
+}
+
 .btn-secondary {
     color: #fff;
     background-color: #858796;
