@@ -62,8 +62,11 @@
     background-color:#ffffff;
     color:black;
     width: 400px;
+    margin-left: 30px;
+    margin-bottom: 10px;
     
 }
+
 #formAlt2
 {
     float: left;
@@ -81,6 +84,7 @@
 }
 
 .form-group-arredondado { 
+    margin-bottom: 9px;
     padding-left: 0.4rem;
     font-size: 1rem;
     font-weight: 400;  
@@ -12424,6 +12428,11 @@ body.sidebar-toggled footer.sticky-footer {
 
 .frmalteracao-gru {
     text-align: center;
+    font-size: 20px;
+}
+
+.frmalteracao-gru-c {
+    text-align: left;
     font-size: 20px;
 }
 
