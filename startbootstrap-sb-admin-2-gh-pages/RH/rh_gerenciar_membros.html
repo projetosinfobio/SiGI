@@ -435,11 +435,27 @@
                         <div class="card-header py-3">
                           <h6 class="m-0 font-weight-bold text-primary">Todos os membros</h6>
                         </div>
+               <!--Pop up Adicionar Movimentação-->
+                 <div id="popup-pedro" class="d-none">
+                    <form class="frmalteracao-pedro" style="color:black;">
+                        &nbsp;&nbsp;Valor:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" class="form-group-arredondado-pedro" placeholder="R$"><br><br>
+                        &nbsp;&nbsp;Data: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" class="form-group-arredondado-pedro" placeholder="AAAA-MM-DD"><br><br>
+                        &nbsp;&nbsp;Motivo:&nbsp;&nbsp;&nbsp;&nbsp; <textarea class="form-group-arredondado-pedro" rows="2"></textarea><br><br><br>
+
+                          <a href="rh_gerenciar_membros.html" class="btn btn-primary btn-icon-split btn-sm" >
+                            <span class="text">Adicionar</span>
+                          </a>
+
+                          <a href="rh_gerenciar_membros.html" class="btn btn-primary btn-icon-split btn-sm teste-pedro" >
+                            <span class="text">Cancelar</span>
+                          </a>
+                 </div>
+               <!--Fim do Pop up de Adicionar Movimentação-->
                         <div class="card-body containerOut"><br>
                           <div class="table-responsive" id="container-2">
                             <!--<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">-->
                               <div id="one" style="color: #696969;">
-                                <center><img src="img/adicionar-usuario.png" height="100" width="100"></center>
+                                <center><img src="img/adicionar-usuario.png" height="100" width="100" onclick="popupAddReu()"></center>
                                 <center>
                                     Adicionar membro
                               </center>
@@ -570,6 +586,14 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
+        <script>
+         function popupAddReu() {
+            if (document.getElementById("popup-pedro").classList.contains('d-none'))
+                document.getElementById("popup-pedro").classList.toggle('d-flex');
+            else
+                document.getElementById("popup-pedro").classList.toggle('d-none');
+        }
+    </script>
 
 </body>
 
