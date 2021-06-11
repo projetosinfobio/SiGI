@@ -642,6 +642,7 @@ pre code {
 #one {
     display: inline-block;
     flex: 0 1 calc(20% - 8px);
+    cursor: pointer; 
 }
 
 @media (min-width:576px) {
