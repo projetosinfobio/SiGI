@@ -209,7 +209,7 @@ sup {
 }
 
 a {
-    color: #4e73df;
+    color: black;
     text-decoration: none;
     background-color: transparent
 }
@@ -640,6 +640,11 @@ pre code {
 }
 
 #one {
+    display: inline-block;
+    flex: 0 1 calc(20% - 8px); 
+}
+
+#oneGerenciar {
     display: inline-block;
     flex: 0 1 calc(20% - 8px);
     cursor: pointer; 
@@ -2621,6 +2626,7 @@ fieldset:disabled a.btn {
     border-color:#08591c;
 }
 
+
 .btn-primary-right {
     color: #fff;
     background-color: #008000;
@@ -2641,7 +2647,7 @@ fieldset:disabled a.btn {
 }
 
 .teste-pedro {
-    margin-left: 0.60cm;
+    margin-left: 0.90cm;
 }
 
 .teste-pedro-rel {
@@ -10825,6 +10831,38 @@ a:focus {
     padding-right: 1.5rem
 }
 
+#containertools{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3,160px);    
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    background-color: white;
+    padding-left:20px;
+    padding-top:30px;
+    padding-bottom:30px;
+    width:600px;
+  }
+
+.tools{
+    border-radius:0.4rem;
+    border: 2px solid;
+    border-color: black;
+    padding: 21px;
+    background-color: #d9d9d9;
+    width:140px;
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.tools:hover{
+    background: #0e9931;
+    color: #000000;
+    text-decoration: none;
+}  
+
 .scroll-to-top {
     position: fixed;
     right: 1rem;
@@ -12384,17 +12422,19 @@ body.sidebar-toggled footer.sticky-footer {
 }
 
 #popup-pedro {
+    display: flex;
     background-color: white;
-    /justify-content: center;/
+    justify-content: center;
     flex-direction: column;
     position: fixed;
     text-align: center;
     align-self: center;
     padding: 5px;
-    width: 600px;
+    width: 500px;
     height: 385px;
-    border: 2px solid #08591c;
+    border: 3px solid #08591c;
 }
+
 
 #popup-pedro2 {
     background-color: white;
@@ -12422,9 +12462,10 @@ body.sidebar-toggled footer.sticky-footer {
 
 .frmalteracao-pedro {
     text-align: center;
-    padding-top: 80px;
-    padding-left: 160px;
+    padding-top: 10px;
+    padding-left: 10px;
 }
+
 
 .botao-pedro {
     background-color: #009a00; 
@@ -12434,6 +12475,13 @@ body.sidebar-toggled footer.sticky-footer {
 .frmalteracao-pedro-tg {
     text-align: center;
     padding-top: 20px;
+}
+
+label.forms-bemol {
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .gambiarra-pedro {
