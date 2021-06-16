@@ -2626,6 +2626,17 @@ fieldset:disabled a.btn {
     border-color:#08591c;
 }
 
+.btn-primaryRed {
+    color: #fff;
+    background-color: #B22222;
+    border-color:#8B0000;
+}
+
+.btn-primaryRed:hover {
+    color: #fff;
+    background-color: #CD5C5C;/*MUDA A COR DE HOVER DO BTN DESLIGAR MEMBRO*/
+    border-color: black;
+}
 
 .btn-primary-right {
     color: #fff;
@@ -2675,20 +2686,7 @@ fieldset:disabled a.btn {
     box-shadow: 0 0 0 .2rem rgba(105, 136, 228, .5)
 }
 
-.btn-primary.disabled,
-.btn-primary:disabled {
-    color: #fff;
-    background-color: #4e73df;
-    border-color: #4e73df
-}
 
-.btn-primary:not(:disabled):not(.disabled).active,
-.btn-primary:not(:disabled):not(.disabled):active,
-.show > .btn-primary.dropdown-toggle {
-    color: #fff;
-    background-color: #2653d4;
-    border-color: #244ec9
-}
 
 .btn-primary:not(:disabled):not(.disabled).active:focus,
 .btn-primary:not(:disabled):not(.disabled):active:focus,
@@ -12421,7 +12419,7 @@ body.sidebar-toggled footer.sticky-footer {
     width: 100%
 }
 
-#popup-pedro {
+#popup-adicionar {
     display: flex;
     background-color: white;
     justify-content: center;
@@ -12435,6 +12433,60 @@ body.sidebar-toggled footer.sticky-footer {
     border: 3px solid #08591c;
 }
 
+
+#popup-detalhado {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    position: fixed;
+    text-align: center;
+    align-self: center;
+    padding: 5px;
+    width: 585px;
+    height: 385px;
+    border: 3px solid #08591c;
+}
+
+.membro-detalhado {
+    display: flex
+    flex-direction: row;
+}
+
+.botoes-membro-detalhado {
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.teste-bemol {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.teste-bemol2 {
+    margin-top: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.teste-bemol3 {
+    float: right;
+    margin-right: 20px;
+}
+
+#img-det {
+    margin-top: 30px;
+    margin-left: 30px;
+    align-self: flex-start;
+}
+
+#txt-det {
+    margin-top: 35px;
+    margin-left: 40px;
+    float: left;
+    flex-wrap: wrap;
+}
 
 #popup-pedro2 {
     background-color: white;

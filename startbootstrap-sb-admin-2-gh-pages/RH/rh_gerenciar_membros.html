@@ -435,112 +435,146 @@
                           <h6 class="m-0 font-weight-bold text-primary">Todos os membros</h6>
                         </div>
 
-               <!--Pop up Adicionar Membro-->
-                 <div id="popup-pedro" class="d-none">
+               <!-- Pop up Adicionar Membro-->
+                 <div id="popup-adicionar" class="d-none">
                     <form class="frmalteracao-pedro" style="color:black;">
                         <label class="forms-bemol">Nome completo:&nbsp;&nbsp;</label><input type="text" class="form-group-arredondado-pedro"><br><br>
                         <label class="forms-bemol">Número USP:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" class="form-group-arredondado-pedro"><br><br>
-                        <label class="forms-bemol">E-mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" class="form-group-arredondado-pedro"><br><br><br>
-
-                          <a href="rh_gerenciar_membros.html" class="btn btn-primary btn-icon-split btn-sm" >
+                        <label class="forms-bemol">E-mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" class="form-group-arredondado-pedro"><br><br>
+                        <label class="forms-bemol">Diretoria:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><select name="cars" class="form-group-arredondado-pedro" id="cars">
+                                            <option value="1">Financeiro</option>
+                                            <option value="2">Marketing</option>
+                                            <option value="3">Projetos</option>
+                                            <option value="4">Qualidade</option>
+                                            <option value="5">Recursos Humanos</option>
+                                            </select><br><br><br>
+                          <a class="btn btn-primary btn-icon-split btn-sm" style="color:white" >
                             <span class="text">Adicionar</span>
                           </a>
 
-                          <a href="rh_gerenciar_membros.html" class="btn btn-primary btn-icon-split btn-sm teste-pedro" >
+                          <a onclick="popupAddMem()" class="btn btn-primary btn-icon-split btn-sm teste-pedro" style="color:white">
                             <span class="text">Cancelar</span>
                           </a>
                  </div>
-               <!--Fim do Pop up de Adicionar Membro-->
+               <!-- Fim do Pop up de Adicionar Membro-->
+
+               <!-- Pop-up de Membro detalhado -->
+                <div id="popup-detalhado" class="d-none">
+                    <div class="membro-detalhado" style="color:black">
+                    <p style="float: left;"><img src="img/icone-do-usuario.png" id="img-det" height="150" width="150"></p>
+                    <h5 id="txt-det" style="font-size: 16px"><b>Nome: </b>Fulano da Silva</h5>
+                    <h5 id="txt-det" style="font-size: 16px"><b>Número USP: </b>11236194</h5><br>
+                    <br><h5 id="txt-det" style="font-size: 16px"><b>Diretoria: </b>Recursos Humanos</h5>
+                    </div>
+
+                    <div class="botoes-membro-detalhado">
+                    <br>
+                    <a class="btn btn-primary btn-icon-split btn-sm teste-bemol" >
+                        <span class="text">⠀⠀Termo de adesão⠀⠀</span>
+                    </a> 
+                    <a class="btn btn-primary btn-icon-split btn-sm teste-bemol" >
+                        <span class="text">Termo de desligamento</span>
+                    </a><br>
+                    <a class="btn btn-primaryRed btn-icon-split btn-sm teste-bemol2" >
+                        <span class="text">Desligar membro</span>
+                    </a><br> 
+                    <a onclick="popupMemDet()" class="btn btn-primary btn-icon-split btn-sm teste-bemol3">
+                        <span class="text">Voltar</span>
+                    </a>
+                    </div>
+                    
+                </div>
+               <!-- Fim do Pop up de Membro detalhado-->
 
                         <div class="card-body containerOut"><br>
                           <div class="table-responsive" id="container-2">
                             <!--<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">-->
                               <div id="oneGerenciar" style="color: #696969;">
-                                <center><img src="img/adicionar-usuario.png" height="100" width="100" onclick="popupAddReu()"></center>
+                                <center><img src="img/adicionar-usuario.png" height="100" width="100" onclick="popupAddMem()"></center>
                                 <center>
                                     Adicionar membro
                               </center>
                              </div>
                               <div id="oneGerenciar" style="color: #696969;">
-                                <center><img src="img/icone-do-usuario.png" height="100" width="100"><center>
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100" onclick="popupMemDet()"><center>
                                 <center> 
                                     Fulano 1
                               </center>
                               </div> 
                               <div id="oneGerenciar" style="color: #696969;">
-                                <center><img src="img/icone-do-usuario.png" height="100" width="100"></center>
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100" onclick="popupMemDet()"></center>
                                 <center> 
                                     Fulano 2
                               </center>
                               </div> 
                               <div id="oneGerenciar" style="color: #696969;">
-                                <center><img src="img/icone-do-usuario.png" height="100" width="100"></center>
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100" onclick="popupMemDet()"></center>
                                 <center> 
                                     Fulano 3
                               </center> 
                               </div>
                               <div id="oneGerenciar" style="color: #696969;">
-                                <center><img src="img/icone-do-usuario.png" height="100" width="100"></center>
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100" onclick="popupMemDet()"></center>
                                 <center> 
                                     Fulano 4
                               </center> <br><br>
                               </div>
                               <div id="oneGerenciar" style="color: #696969;">
-                                <center><img src="img/icone-do-usuario.png" height="100" width="100"></center>
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100" onclick="popupMemDet()"></center>
                                 <center> 
                                     Fulano 5
                               </center>
                               </div>                              
                               <div id="oneGerenciar" style="color: #696969;">
-                                <center><img src="img/icone-do-usuario.png" height="100" width="100"></center>
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100" onclick="popupMemDet()"></center>
                                 <center> 
                                     Fulano 6
                               </center>
                               </div>
                               <div id="oneGerenciar" style="color: #696969;">
-                                <center><img src="img/icone-do-usuario.png" height="100" width="100"></center>
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100" onclick="popupMemDet()"></center>
                                 <center> 
                                     Fulano 7
                               </center>
                               </div> 
                               <div id="oneGerenciar" style="color: #696969;">
-                                <center><img src="img/icone-do-usuario.png" height="100" width="100"></center>
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100" onclick="popupMemDet()"></center>
                                 <center> 
                                     Fulano 8
                               </center><br><br>
                               </div>
                               <div id="oneGerenciar" style="color: #696969;">
-                                <center><img src="img/icone-do-usuario.png" height="100" width="100"></center>
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100" onclick="popupMemDet()"></center>
                                 <center> 
                                     Fulano 9
                               </center>
                               </div> 
                               <div id="oneGerenciar" style="color: #696969;">
-                                <center><img src="img/icone-do-usuario.png" height="100" width="100"></center>
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100" onclick="popupMemDet()"></center>
                                 <center> 
                                     Fulano 10
                               </center>
                               </div> 
                               <div id="oneGerenciar" style="color: #696969;">
-                                <center><img src="img/icone-do-usuario.png" height="100" width="100"></center>
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100" onclick="popupMemDet()"></center>
                                 <center> 
                                     Fulano 11
                               </center>
                               </div>
                               <div id="oneGerenciar" style="color: #696969;">
-                                <center><img src="img/icone-do-usuario.png" height="100" width="100"></center>
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100" onclick="popupMemDet()"></center>
                                 <center> 
                                     Fulano 12
                               </center>
                               </div>
                               <div id="oneGerenciar" style="color: #696969;">
-                                <center><img src="img/icone-do-usuario.png" height="100" width="100"></center>
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100" onclick="popupMemDet()"></center>
                                 <center> 
                                     Fulano 13
                               </center>
                               </div>                              
                               <div id="oneGerenciar" style="color: #696969;">
-                                <center><img src="img/icone-do-usuario.png" height="100" width="100"></center>
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100" onclick="popupMemDet()"></center>
                                 <center> 
                                     Fulano 14
                               </center><br><br>                            
@@ -588,11 +622,17 @@
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
         <script>
-         function popupAddReu() {
-            if (document.getElementById("popup-pedro").classList.contains('d-none'))
-                document.getElementById("popup-pedro").classList.toggle('d-flex');
+         function popupAddMem() {
+            if (document.getElementById("popup-adicionar").classList.contains('d-none'))
+                document.getElementById("popup-adicionar").classList.toggle('d-flex');
             else
-                document.getElementById("popup-pedro").classList.toggle('d-none');
+                document.getElementById("popup-adicionar").classList.toggle('d-none');
+        }
+        function popupMemDet() {
+            if (document.getElementById("popup-detalhado").classList.contains('d-none'))
+                document.getElementById("popup-detalhado").classList.toggle('d-flex');
+            else
+                document.getElementById("popup-detalhado").classList.toggle('d-none');
         }
     </script>
 
