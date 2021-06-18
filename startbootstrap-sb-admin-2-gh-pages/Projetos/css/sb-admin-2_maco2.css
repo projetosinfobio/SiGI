@@ -10791,11 +10791,13 @@ a:focus {
     padding: 10px;
     background-color:#d9d9d9;
     width:140px;
-
+    color:black;
 }
 
 .tools:hover {
-    background-color: #0e9931;
+    background: #0e9931;
+    color: #000000;
+    text-decoration: none;
 }
 
 .container,

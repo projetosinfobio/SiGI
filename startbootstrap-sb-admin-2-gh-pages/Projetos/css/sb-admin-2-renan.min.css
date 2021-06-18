@@ -82,16 +82,16 @@
 
 .form-group-arredondado { 
     padding-left: 0.4rem;
-    font-size: 1rem;
+    font-size:0.9rem;
     font-weight: 400;  
     background-clip: padding-box;    
     border-radius: 10rem;
     border: 1px solid;
     border-color:#6e707e;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    background-color: #009a00; padding:5px; color: white; width:120px;
 }
 
-/*Créditos Sofia Azevedo Rosa*/
 
 #container{
     display: grid;
@@ -130,10 +130,15 @@
     border-radius:0.4rem;
     border: 2px solid;
     border-color: black;
-    padding: 10px;
-    background-color:white;
+    padding: 20px;
+    background-color:#d9d9d9;
     width:140px;
 
+}
+.tools:hover {
+    background: #0e9931;
+    color: #000000;
+    text-decoration: none;
 }
 
 .nav-link-renan{
@@ -143,7 +148,22 @@
     padding: 1rem;
     width: 14rem
 }
+#container-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-right: .75rem;
+    padding-left: .75rem;
+    margin-right: auto;
+    margin-left: auto;
+}
 
+#one {
+    display: inline-block;
+    flex: 0 1 calc(20% - 8px);
+}
 image
 :root {
     --blue: #4e73df;
@@ -2706,7 +2726,15 @@ a.btn.disabled,
 fieldset:disabled a.btn {
     pointer-events: none
 }
-
+.btn-primary-right
+{
+    color: white;
+    background-color: #008000;
+    border-color:#08591c;
+    float: right;
+    margin-bottom:20px;
+    margin-left:100px;
+}
 .btn-primary {
     color: #fff;
     background-color: #32CD32 ;
