@@ -9,14 +9,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SiGi - RH Gerenciar Membros</title>
+    <title>SiGi - Gerenciar Membros</title>
     <link rel="icon" href="img/logo.png">
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css/sb-admin-2-pedro.min.css" rel="stylesheet">
     <link rel="stylesheet" href="scss/navs/_sidebar.scss">
     <link rel="stylesheet" href="scss/navs/_global.scss">
     <link rel="stylesheet" href="scss/navs/_topbar.scss">
@@ -39,15 +39,15 @@
             </a>
 
             <!-- ----------------------------------------------------------------------------------------------------- -->
-            <hr class="sidebar-divider">
-            <center><h4 style="color:white;"><b>RH</b></h4></center>  
+
             <!-- Divider -->
             <hr class="sidebar-divider">
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item" >
-                <a class="nav-link" id="otoaqui" href="index.html">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Gerenciar Membros</span></a>
+            <li class="nav-item">
+                <!-- Tirei o href as demais classes-->
+                <a class="nav-link-pedro" >
+
+                    <h4><b>RH</b></h4></a>
             </li>
 <!--
             <li class="nav-item active">
@@ -78,10 +78,9 @@
       </div>-->
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>Avaliações</span>
+            <li class="nav-item" id="predo">
+                <a class="nav-link collapsed" href="rh_gerenciar_membros.html" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    <span>Gerenciar Membros</span>
                 </a>
                 <!--<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
@@ -96,10 +95,11 @@
             <hr class="sidebar-divider">
 
             <!-- Nav Item - Utilities Collapse Menu -->
+
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Certificado</span>
+                <a class="nav-link collapsed" href="avaliacao_rh.html" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+
+                    <span>Avaliações</span>
                 </a>
                 <!--<div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
@@ -112,7 +112,16 @@
         </div>-->
             </li>
 
-            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+
+           <!-- Nav Item - Utilities Collapse Menu -->
+           <li class="nav-item">
+            <a class="nav-link collapsed" href="Certificados_Rh.html" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+
+                <span>Certificado</span>
+            </a>      
+           </li>
             <hr class="sidebar-divider">
 
             <!-- Heading 
@@ -141,41 +150,41 @@
       </li> -->
 
             <!-- Nav Item - Charts -->
-            <li class="nav-item">
-                <a class="nav-link" href="charts.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Documentos</span></a>
-            </li>
+           <li class="nav-item">
+            <a class="nav-link collapsed" href="documentacao_rh.html" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
 
-            <!-- Nav Item - Tables 
-      <li class="nav-item">
-        <a class="nav-link" href="tables.html">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Tables</span></a>
-      </li>-->
+                <span>Documentos</span>
+            </a>      
+           </li>
+            <hr class="sidebar-divider">   
+
+
+           <!-- Nav Item - Utilities Collapse Menu -->
+           <li class="nav-item">
+            <a class="nav-link collapsed" href="membros_rh.html" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+
+                <span>Membros</span>
+            </a>      
+           </li>            
+            <!-- Divider -->
             <hr class="sidebar-divider">
 
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Relatórios</span></a>
-            </li>
+            <a class="nav-link collapsed" href="atas_rh.html" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+
+                <span>Atas</span>
+            </a>      
+           </li>
             <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block"> 
 
             <!-- Sidebar Toggler (Sidebar) -->
             <!--<div class="text-center d-none d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>-->
-            <hr class="sidebar-divider">
 
-            <li class="nav-item">
-                <a class="nav-link" href="charts.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Membros</span></a>
-            </li>
-            <!-- Divider -->
-            <hr class="sidebar-divider d-none d-md-block">
         </ul>
+
         <!-- End of Sidebar -->
 
         <!-- ----------------------------------------------------------------------------------------------------- -->
@@ -419,40 +428,159 @@
                 </nav>
                 <!--Page Content-->
                 <div class="container-fluid">
-                    <h1 class="h3 mb-4 text-gray-800">Gerenciar Membros</h1>
-                    <div class="card-body containerOut"><br>
-                        <div class="card shadow mb-4">
-                                <div class="foto_membros">
-                                    <figure>
-                                        <img src="#" alt="Fulano1">
-                                        <p>Fulano1</p>
-                                    </figure>
-                                    <figure>
-                                        <img src="#" alt="Fulano2">
-                                        <p>Fulano2</p>
-                                    </figure>
-                                    <figure>    
-                                        <img src="#" alt="Fulano3">
-                                        <p>Fulano3</p>
-                                    </figure>
-                                    <figure>
-                                        <img src="#" alt="Fulano4">
-                                        <p>Fulano4</p>
-                                    </figure>
-                                    <figure>
-                                        <img src="#" alt="Fulano5">
-                                        <p>Fulano5</p>
-                                    </figure>
-                                    <figure>    
-                                        <img src="#" alt="Fulano6">
-                                        <p>Fulano6</p>
-                                    </figure>
-                                </div>
-                  
+                    <h1 class="h3 mb-4 text-gray-800">Gerenciar membros</h1>
+
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                          <h6 class="m-0 font-weight-bold text-primary">Todos os membros</h6>
+                        </div>
+
+               <!-- Pop up Adicionar Membro-->
+                 <div id="popup-adicionar" class="d-none">
+                    <form class="frmalteracao-pedro" style="color:black;">
+                        <label class="forms-bemol">Nome completo:&nbsp;&nbsp;</label><input type="text" class="form-group-arredondado-pedro"><br><br>
+                        <label class="forms-bemol">Número USP:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" class="form-group-arredondado-pedro"><br><br>
+                        <label class="forms-bemol">E-mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" class="form-group-arredondado-pedro"><br><br>
+                        <label class="forms-bemol">Diretoria:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><select name="cars" class="form-group-arredondado-pedro" id="cars">
+                                            <option value="1">Financeiro</option>
+                                            <option value="2">Marketing</option>
+                                            <option value="3">Projetos</option>
+                                            <option value="4">Qualidade</option>
+                                            <option value="5">Recursos Humanos</option>
+                                            </select><br><br><br>
+                          <a class="btn btn-primary btn-icon-split btn-sm" style="color:white" >
+                            <span class="text">Adicionar</span>
+                          </a>
+
+                          <a onclick="popupAddMem()" class="btn btn-primary btn-icon-split btn-sm teste-pedro" style="color:white">
+                            <span class="text">Cancelar</span>
+                          </a>
+                 </div>
+               <!-- Fim do Pop up de Adicionar Membro-->
+
+               <!-- Pop-up de Membro detalhado -->
+                <div id="popup-detalhado" class="d-none">
+                    <div class="membro-detalhado" style="color:black">
+                    <p style="float: left;"><img src="img/icone-do-usuario.png" id="img-det" height="150" width="150"></p>
+                    <h5 id="txt-det" style="font-size: 16px"><b>Nome: </b>Carlos Eduardo Eli Capelini Lopes</h5>
+                    <h5 id="txt-det" style="font-size: 16px"><b>Número USP: </b>11236194</h5><br>
+                    <br><h5 id="txt-det" style="font-size: 16px"><b>Diretoria: </b>Projetos</h5>
+                    </div>
+
+                    <div class="botoes-membro-detalhado">
+                    <br>
+                    <a class="btn btn-primary btn-icon-split btn-sm teste-bemol" >
+                        <span class="text">⠀⠀Termo de adesão⠀⠀</span>
+                    </a> 
+                    <a class="btn btn-primary btn-icon-split btn-sm teste-bemol" >
+                        <span class="text">Termo de desligamento</span>
+                    </a><br>
+                    <a class="btn btn-primaryRed btn-icon-split btn-sm teste-bemol2" >
+                        <span class="text">Desligar membro</span>
+                    </a><br> 
+                    <a onclick="popupMemDet()" class="btn btn-primary btn-icon-split btn-sm teste-bemol3">
+                        <span class="text">Voltar</span>
+                    </a>
+                    </div>
+                    
+                </div>
+               <!-- Fim do Pop up de Membro detalhado-->
+
+                        <div class="card-body containerOut"><br>
+                          <div class="table-responsive" id="container-2">
+                            <!--<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">-->
+                              <div id="oneGerenciar" style="color: #696969;">
+                                <center><img src="img/adicionar-usuario.png" height="100" width="100" onclick="popupAddMem()"></center>
+                                <center>
+                                    Adicionar membro
+                              </center>
+                             </div>
+                              <div id="oneGerenciar" style="color: #696969;">
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100" onclick="popupMemDet()"><center>
+                                <center> 
+                                    Fulano 1
+                              </center>
+                              </div> 
+                              <div id="oneGerenciar" style="color: #696969;">
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100" onclick="popupMemDet()"></center>
+                                <center> 
+                                    Fulano 2
+                              </center>
+                              </div> 
+                              <div id="oneGerenciar" style="color: #696969;">
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100" onclick="popupMemDet()"></center>
+                                <center> 
+                                    Fulano 3
+                              </center> 
+                              </div>
+                              <div id="oneGerenciar" style="color: #696969;">
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100" onclick="popupMemDet()"></center>
+                                <center> 
+                                    Fulano 4
+                              </center> <br><br>
+                              </div>
+                              <div id="oneGerenciar" style="color: #696969;">
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100" onclick="popupMemDet()"></center>
+                                <center> 
+                                    Fulano 5
+                              </center>
+                              </div>                              
+                              <div id="oneGerenciar" style="color: #696969;">
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100" onclick="popupMemDet()"></center>
+                                <center> 
+                                    Fulano 6
+                              </center>
+                              </div>
+                              <div id="oneGerenciar" style="color: #696969;">
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100" onclick="popupMemDet()"></center>
+                                <center> 
+                                    Fulano 7
+                              </center>
+                              </div> 
+                              <div id="oneGerenciar" style="color: #696969;">
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100" onclick="popupMemDet()"></center>
+                                <center> 
+                                    Fulano 8
+                              </center><br><br>
+                              </div>
+                              <div id="oneGerenciar" style="color: #696969;">
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100" onclick="popupMemDet()"></center>
+                                <center> 
+                                    Fulano 9
+                              </center>
+                              </div> 
+                              <div id="oneGerenciar" style="color: #696969;">
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100" onclick="popupMemDet()"></center>
+                                <center> 
+                                    Fulano 10
+                              </center>
+                              </div> 
+                              <div id="oneGerenciar" style="color: #696969;">
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100" onclick="popupMemDet()"></center>
+                                <center> 
+                                    Fulano 11
+                              </center>
+                              </div>
+                              <div id="oneGerenciar" style="color: #696969;">
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100" onclick="popupMemDet()"></center>
+                                <center> 
+                                    Fulano 12
+                              </center>
+                              </div>
+                              <div id="oneGerenciar" style="color: #696969;">
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100" onclick="popupMemDet()"></center>
+                                <center> 
+                                    Fulano 13
+                              </center>
+                              </div>                              
+                              <div id="oneGerenciar" style="color: #696969;">
+                                <center><img src="img/icone-do-usuario.png" height="100" width="100" onclick="popupMemDet()"></center>
+                                <center> 
+                                    Fulano 14
+                              </center><br><br>                            
+                          </div>
                         </div>
                     </div>  
-
-                </div>
                 <!--Page Content-->
         </div>
         <!-- End of Content Wrapper -->
@@ -493,6 +621,20 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
+        <script>
+         function popupAddMem() {
+            if (document.getElementById("popup-adicionar").classList.contains('d-none'))
+                document.getElementById("popup-adicionar").classList.toggle('d-flex');
+            else
+                document.getElementById("popup-adicionar").classList.toggle('d-none');
+        }
+        function popupMemDet() {
+            if (document.getElementById("popup-detalhado").classList.contains('d-none'))
+                document.getElementById("popup-detalhado").classList.toggle('d-flex');
+            else
+                document.getElementById("popup-detalhado").classList.toggle('d-none');
+        }
+    </script>
 
 </body>
 
