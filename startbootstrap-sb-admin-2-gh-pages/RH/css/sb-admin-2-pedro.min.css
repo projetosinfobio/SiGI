@@ -209,7 +209,7 @@ sup {
 }
 
 a {
-    color: #4e73df;
+    color: black;
     text-decoration: none;
     background-color: transparent
 }
@@ -624,7 +624,30 @@ pre code {
     padding-right: .75rem;
     padding-left: .75rem;
     margin-right: auto;
-    margin-left: auto
+    margin-left: auto;
+}
+
+#container-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-right: .75rem;
+    padding-left: .75rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#one {
+    display: inline-block;
+    flex: 0 1 calc(20% - 8px); 
+}
+
+#oneGerenciar {
+    display: inline-block;
+    flex: 0 1 calc(20% - 8px);
+    cursor: pointer; 
 }
 
 @media (min-width:576px) {
@@ -651,8 +674,8 @@ pre code {
     }
 }
 
-.container-fluid-relatorio {
-    width: 75%;
+.container-fluid-certificado {
+    width: 80%;
     height: 40%;
     padding-right: .75rem;
     padding-left: .75rem;
@@ -660,7 +683,18 @@ pre code {
     margin-left: auto
 }
 
+.container-fluid-2 {
+    width: 90%;
+    height: 40%;
+    padding-right: .75rem;
+    padding-left: .75rem;
+    margin-right: auto;
+    margin-left: auto
+}
 
+.text-title {
+    margin-left: 2%;
+}
 
 .no-gutters {
     margin-right: 0;
@@ -2599,12 +2633,43 @@ fieldset:disabled a.btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #0e9931 ;
+    background-color: #008000;
     border-color:#08591c;
 }
 
+.btn-primaryRed {
+    color: #fff;
+    background-color: #B22222;
+    border-color:#8B0000;
+}
+
+.btn-primaryRed:hover {
+    color: #fff;
+    background-color: #CD5C5C;/*MUDA A COR DE HOVER DO BTN DESLIGAR MEMBRO*/
+    border-color: black;
+}
+
+.btn-primary-right {
+    color: #fff;
+    background-color: #008000;
+    border-color:#08591c;
+    float: right;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0e9931;/*MUDA A COR DE HOVER DO BTN LOGIN*/
+    border-color: black;
+}
+
+.btn-primary-right:hover {
+    color: #fff;
+    background-color: #0e9931;/*MUDA A COR DE HOVER DO BTN LOGIN*/
+    border-color: black;
+}
+
 .teste-pedro {
-    margin-left: 0.60cm;
+    margin-left: 0.90cm;
 }
 
 .teste-pedro-rel {
@@ -2623,14 +2688,13 @@ fieldset:disabled a.btn {
     margin-top: 0.25cm;
 }
 
-.teste-pedro2 {
-    margin-left: 2.5cm;
+.avaliacao-margin {
+    margin-top: 0.5cm;
+    margin-left: 0.5cm;
 }
 
-.btn-primary:hover {
-    color: #fff;
-    background-color: #0e9931;/*MUDA A COR DE HOVER DO BTN LOGIN*/
-    border-color:#08591c
+.teste-pedro2 {
+    margin-left: 2.5cm;
 }
 
 .btn-primary.focus,
@@ -2638,20 +2702,7 @@ fieldset:disabled a.btn {
     box-shadow: 0 0 0 .2rem rgba(105, 136, 228, .5)
 }
 
-.btn-primary.disabled,
-.btn-primary:disabled {
-    color: #fff;
-    background-color: #4e73df;
-    border-color: #4e73df
-}
 
-.btn-primary:not(:disabled):not(.disabled).active,
-.btn-primary:not(:disabled):not(.disabled):active,
-.show > .btn-primary.dropdown-toggle {
-    color: #fff;
-    background-color: #2653d4;
-    border-color: #244ec9
-}
 
 .btn-primary:not(:disabled):not(.disabled).active:focus,
 .btn-primary:not(:disabled):not(.disabled):active:focus,
@@ -10794,6 +10845,38 @@ a:focus {
     padding-right: 1.5rem
 }
 
+#containertools{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3,160px);    
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    background-color: white;
+    padding-left:20px;
+    padding-top:30px;
+    padding-bottom:30px;
+    width:600px;
+  }
+
+.tools{
+    border-radius:0.4rem;
+    border: 2px solid;
+    border-color: black;
+    padding: 21px;
+    background-color: #d9d9d9;
+    width:140px;
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.tools:hover{
+    background: #0e9931;
+    color: #000000;
+    text-decoration: none;
+}  
+
 .scroll-to-top {
     position: fixed;
     right: 1rem;
@@ -12352,17 +12435,75 @@ body.sidebar-toggled footer.sticky-footer {
     width: 100%
 }
 
-#popup-pedro {
-    background-color: white;
-    /justify-content: center;/
+#popup-adicionar {
+    display: flex;
+    background-color: #f5f5f5;
+    justify-content: center;
     flex-direction: column;
     position: fixed;
     text-align: center;
     align-self: center;
     padding: 5px;
-    width: 600px;
+    width: 500px;
     height: 385px;
-    border: 2px solid #08591c;
+    border-radius: 1rem;
+    border: 1px solid #000000;
+}
+
+
+#popup-detalhado {
+    display: flex;
+    background-color: #f5f5f5;
+    flex-direction: column;
+    position: fixed;
+    text-align: center;
+    align-self: center;
+    padding: 5px;
+    width: 585px;
+    height: 385px;
+    border-radius: 1rem;
+    border: 1px solid #000000;
+}
+
+.membro-detalhado {
+    display: flex
+    flex-direction: row;
+}
+
+.botoes-membro-detalhado {
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.teste-bemol {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.teste-bemol2 {
+    margin-top: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.teste-bemol3 {
+    float: right;
+    margin-right: 20px;
+}
+
+#img-det {
+    margin-top: 30px;
+    margin-left: 30px;
+    align-self: flex-start;
+}
+
+#txt-det {
+    margin-top: 35px;
+    margin-left: 40px;
+    float: left;
+    flex-wrap: wrap;
 }
 
 #popup-pedro2 {
@@ -12391,9 +12532,10 @@ body.sidebar-toggled footer.sticky-footer {
 
 .frmalteracao-pedro {
     text-align: center;
-    padding-top: 80px;
-    padding-left: 160px;
+    padding-top: 10px;
+    padding-left: 10px;
 }
+
 
 .botao-pedro {
     background-color: #009a00; 
@@ -12403,6 +12545,13 @@ body.sidebar-toggled footer.sticky-footer {
 .frmalteracao-pedro-tg {
     text-align: center;
     padding-top: 20px;
+}
+
+label.forms-bemol {
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .gambiarra-pedro {

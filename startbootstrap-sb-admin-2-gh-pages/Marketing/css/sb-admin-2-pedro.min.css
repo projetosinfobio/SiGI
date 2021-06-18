@@ -12417,3 +12417,27 @@ body.sidebar-toggled footer.sticky-footer {
 .cor-pedro {
     color: black;
 }
+
+.btn-primary-right {
+    color: #fff;
+    background-color: #008000;
+    border-color:#08591c;
+    float: right;
+}
+
+#container-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-right: .75rem;
+    padding-left: .75rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#one {
+    display: inline-block;
+    flex: 0 1 calc(20% - 8px);
+}
