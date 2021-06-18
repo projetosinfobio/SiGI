@@ -674,8 +674,8 @@ pre code {
     }
 }
 
-.container-fluid-relatorio {
-    width: 75%;
+.container-fluid-certificado {
+    width: 80%;
     height: 40%;
     padding-right: .75rem;
     padding-left: .75rem;
@@ -683,7 +683,18 @@ pre code {
     margin-left: auto
 }
 
+.container-fluid-2 {
+    width: 90%;
+    height: 40%;
+    padding-right: .75rem;
+    padding-left: .75rem;
+    margin-right: auto;
+    margin-left: auto
+}
 
+.text-title {
+    margin-left: 2%;
+}
 
 .no-gutters {
     margin-right: 0;
@@ -2675,6 +2686,11 @@ fieldset:disabled a.btn {
 
 .teste-bemol-margintop2 {
     margin-top: 0.25cm;
+}
+
+.avaliacao-margin {
+    margin-top: 0.5cm;
+    margin-left: 0.5cm;
 }
 
 .teste-pedro2 {
@@ -12421,7 +12437,7 @@ body.sidebar-toggled footer.sticky-footer {
 
 #popup-adicionar {
     display: flex;
-    background-color: white;
+    background-color: #f5f5f5;
     justify-content: center;
     flex-direction: column;
     position: fixed;
@@ -12430,13 +12446,14 @@ body.sidebar-toggled footer.sticky-footer {
     padding: 5px;
     width: 500px;
     height: 385px;
-    border: 3px solid #08591c;
+    border-radius: 1rem;
+    border: 1px solid #000000;
 }
 
 
 #popup-detalhado {
     display: flex;
-    background-color: white;
+    background-color: #f5f5f5;
     flex-direction: column;
     position: fixed;
     text-align: center;
@@ -12444,7 +12461,8 @@ body.sidebar-toggled footer.sticky-footer {
     padding: 5px;
     width: 585px;
     height: 385px;
-    border: 3px solid #08591c;
+    border-radius: 1rem;
+    border: 1px solid #000000;
 }
 
 .membro-detalhado {
