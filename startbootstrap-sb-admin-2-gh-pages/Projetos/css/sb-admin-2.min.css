@@ -2747,6 +2747,14 @@ fieldset:disabled a.btn {
     pointer-events: none
 }
 
+.btn-primary-right{
+    color: white;
+    background-color: #008000;
+    border-color:#08591c;
+    float: right;
+    margin-bottom:20px;
+    margin-left:100px;
+}
 .btn-primary {
     color: #fff;
     background-color: #32CD32 ;
