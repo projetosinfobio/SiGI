@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SiGi - Gerar Relatório</title>
+    <title>SiGi - Atas</title>
     <link rel="icon" href="img/logo.png">
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -38,8 +38,7 @@
                 <div class="sidebar-brand-text mx-3">SiGi</div>
             </a>
 
-            <!-- ----------------------------------------------------------------------------------------------------- -->
-
+     
             <!-- Divider -->
             <hr class="sidebar-divider">
             <!-- Nav Item - Dashboard -->
@@ -78,7 +77,7 @@
       </div>-->
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
+            <li class="nav-item" >
                 <a class="nav-link collapsed" href="Fluxo_Financeiro.html" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                     <span>Fluxo Financeiro</span>
                 </a>
@@ -140,7 +139,7 @@
       </li> -->
 
             <!-- Nav Item - Charts -->
-            <li class="nav-item" id="predo">
+            <li class="nav-item">
                 <a class="nav-link" href="Relatorio_Financeiro.html">
                     <span>Relatórios</span></a>
             </li>
@@ -181,21 +180,25 @@
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>-->
 
-            <li class="nav-item" >
-                <a class="nav-link collapsed" href="Atas_Financeiro.html" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-      
-                    <span>Atas</span>
-                </a>      
-               </li>
-                <!-- Divider -->
-                <hr class="sidebar-divider d-none d-md-block">
-      
-                <!-- Sidebar Toggler (Sidebar) -->
-                <!--<div class="text-center d-none d-md-inline">
-                    <button class="rounded-circle border-0" id="sidebarToggle"></button>
-                </div>-->
-      
-            </ul>
+          <!-- Divider -->
+
+
+          <li class="nav-item" id="predo">
+          <a class="nav-link collapsed" href="Atas_Financeiro.html" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+
+              <span>Atas</span>
+          </a>      
+         </li>
+          <!-- Divider -->
+          <hr class="sidebar-divider d-none d-md-block">
+
+          <!-- Sidebar Toggler (Sidebar) -->
+          <!--<div class="text-center d-none d-md-inline">
+              <button class="rounded-circle border-0" id="sidebarToggle"></button>
+          </div>-->
+
+      </ul>
+        <!-- End of Sidebar -->
 
         <!-- ----------------------------------------------------------------------------------------------------- -->
 
@@ -478,53 +481,31 @@
 
                 </nav>
 
-               <!-- Begin Page Content -->
-               <h1 class="h3 mb-4 text-gray-800 gambiarra-pedro">Relatórios</h1>
-               <div class="container-fluid-relatorio">
-               
-                <div class="card shadow mb-4">
-                 <div class="card-body">
-                    <div class="table-responsive">
-                      <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+<!--Page Content-->
+                <div class="container-fluid">
+                    <h1 class="h3 mb-4 text-gray-800">Atas</h1>
+                    <!--<div class="card-body containerOut">-->
+                        <div class="card shadow mb-4">
+                            <center>
                        
-            
-                  <!--      <h1 class="h5 mb-4 text-gray-800">Documentos: &nbsp;&nbsp;&nbsp;
-                            <select name="dataTable_length" aria-controls="dataTable" class="custom-select-pedro custom-select-sm form-control form-control-sm">
-                                <option >Selecione o Documento</option>
-                                <option >Documento 1</option>
-                                <option >Documento 2</option>
-                                <option >Documento 3</option>
-                                <option >Documento 4</option>
-                            </select>
-                        </h1>
-                -->
-                        <div>
-                            <h1  class="h5 mb-4 text-gray-800">Data: &nbsp;&nbsp;
-                              <input id="date" type="date" class="custom-select-pedro2 custom-select-sm form-control form-control-sm" name="dataTable_length" aria-controls="dataTable">
-                              &nbsp;&nbsp;&nbsp;até&nbsp;&nbsp;&nbsp;
-                              <input id="date" type="date" class="custom-select-pedro2 custom-select-sm form-control form-control-sm" name="dataTable_length" aria-controls="dataTable">
-                                  
-                              
-
-                            </h1>
+                            <div id="containertools">                                                
+                                <a href="#" class="tools">&nbsp;Ata 1</a>
+                                <a href="#" class="tools">&nbsp;Ata 2</a>
+                                <a href="#" class="tools">&nbsp;Ata 3</a>
+                                <a href="#" class="tools">&nbsp;Ata 4</a>
+                                <a href="#" class="tools">&nbsp;Ata 5</a>
+                                <a href="#" class="tools">&nbsp;Ata 6</a>
+                                <a href="#" class="tools">&nbsp;Ata 7</a>
+                                <a href="#" class="tools">&nbsp;Ata 8</a>
+                                <a href="#" class="tools">&nbsp;Ata 9</a>                  
+                            </div>
+                            </center>
+                  
                         </div>
-                    
+                    </div>  
 
-                      </table>  
-                    </div>
-                    <center>
-                      <a href="#" class="btn btn-primary btn-icon-split btn-sm btn-primary-center" >
-                        <span class="text">Gerar PDF</span>
-                      </a>
-                    </center>
-                 </div>
                 </div>
-               </div>
-        </div>
-        <!-- End of Content Wrapper -->
-
-    </div>
-
+                <!--Page Content-->
     <!-- End of Page Wrapper -->
 
     <!-- Scroll to Top Button-->
@@ -560,16 +541,7 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
-    <script>
-         function popupAddReu() {
-            if (document.getElementById("popup-pedro").classList.contains('d-none'))
-                document.getElementById("popup-pedro").classList.toggle('d-flex');
-            else
-                document.getElementById("popup-pedro").classList.toggle('d-none');
-        }
-    </script>
 
-    
 </body>
 
 </html>
