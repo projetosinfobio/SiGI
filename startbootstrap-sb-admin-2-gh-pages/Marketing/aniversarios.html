@@ -45,6 +45,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2-pedro.min.css" rel="stylesheet">
     <link href="css/sb-admin-2-renan.min.css" rel="stylesheet">
     <!-- <link href="css/sb-admin-2.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="scss/navs/_sidebar.scss">
@@ -63,7 +64,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <!--Essa div deixa os elementos entortados-->
                 </div>
@@ -112,7 +113,7 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                <a class="nav-link collapsed" href="ferramentas.html" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                     
                     <span>Ferramentas</span>
                 </a>
@@ -130,7 +131,7 @@
 
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+                <a class="nav-link collapsed" href="documentacao_marketing.html" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
                     
                     <span>Documentos</span>
                 </a>
@@ -175,7 +176,7 @@
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="membros_marketing.html">
                     
                     <span>Membros</span></a>
             </li>
@@ -196,7 +197,7 @@
             </div>-->
 
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
+                <a class="nav-link" href="marketing_atas.html">
                     <span>Atas</span></a>
             </li>
 
@@ -244,211 +245,151 @@
 
 
                     <!-- Topbar Navbar -->
-                    <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav" style="width: 100%;">
 
-                        <!-- Nav Item - Search Dropdown (Visible Only XS) 
-                        <li class="nav-item dropdown no-arrow d-sm-none">
-                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-search fa-fw"></i>
+                    <!-- Nav Item - Search Dropdown (Visible Only XS) 
+                    <li class="nav-item dropdown no-arrow d-sm-none">
+                        <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+
+                        <!-- Dropdown - Messages 
+                        <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                            <form class="form-inline mr-auto w-100 navbar-search">
+                                <div class="input-group">
+                                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary" type="button">
+                                            <i class="fas fa-search fa-sm"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+
+                    <!-- Nav Item - Alerts -->
+                    <li class="nav-item dropdown no-arrow mx-1">
+                        <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Diretorias
+                            <!--<i class="fas fa-bell fa-fw"></i>
+                            <!-- Counter - Alerts -->
+                            <!--<span class="badge badge-danger badge-counter">3+</span>-->
+                        </a>
+                        <!-- Dropdown - Alerts -->
+                        <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                            <h3 class="dropdown-header">
+                                Diretorias
+                            </h3>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <div>
+                                    <span class="font-weight-bold">Marketing</span>
+                                </div>
+                           </a>
+                         <!--    <a class="dropdown-item d-flex align-items-center" href="#">
+                                <div class="mr-3"> 
+                                </div>
+                                <div>                     
+                                    <span class="font-weight-bold">Recursos Humanos</span>
+                                </div>
                             </a>
-
-                            <!-- Dropdown - Messages 
-                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
-                                <form class="form-inline mr-auto w-100 navbar-search">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-                                        <div class="input-group-append">
-                                            <button class="btn btn-primary" type="button">
-                                                <i class="fas fa-search fa-sm"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </li>
-
-                        <!-- Nav Item - Alerts -->
-                        <li class="nav-item dropdown no-arrow mx-1">
-                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Diretorias
-                                <!--<i class="fas fa-bell fa-fw"></i>
-                                <!-- Counter - Alerts -->
-                                <!--<span class="badge badge-danger badge-counter">3+</span>-->
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <div class="mr-3">
+             
+                                </div>
+                                <div>
+                                    <span class="font-weight-bold">Qualidade</span>
+                                </div>
                             </a>
-                            <!-- Dropdown - Alerts -->
-                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
-                                <h6 class="dropdown-header">
-                                    Diretorias
-                                </h6>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="mr-3">
-                                        <!--<div class="icon-circle bg-primary">
-                                            <i class="fas fa-file-alt text-white"></i>
-                                        </div>-->
-                                    </div>
-                                    <div>
-                                        <!--<div class="small text-gray-500">December 12, 2019</div>-->
-                                        <span class="font-weight-bold">Projetos</span>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="mr-3">
-                                        <!--<div class="icon-circle bg-success">
-                                            <i class="fas fa-donate text-white"></i>
-                                        </div>-->
-                                    </div>
-                                    <div>
-                                        <!--<div class="small text-gray-500">December 7, 2019</div>-->
-                                        <span class="font-weight-bold">Recursos Humanos</span>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="mr-3">
-                                        <!--<div class="icon-circle bg-warning">
-                                            <i class="fas fa-exclamation-triangle text-white"></i>
-                                        </div>-->
-                                    </div>
-                                    <div>
-                                        <!--<div class="small text-gray-500">December 2, 2019</div>-->
-                                        <span class="font-weight-bold">Qualidade</span>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="mr-3">
-                                        <!--<div class="icon-circle bg-warning">
-                                            <i class="fas fa-exclamation-triangle text-white"></i>
-                                        </div>-->
-                                    </div>
-                                    <div>
-                                        <!--<div class="small text-gray-500">December 2, 2019</div>-->
-                                        <span class="font-weight-bold">Marketing</span>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="mr-3">
-                                        <!--<div class="icon-circle bg-warning">
-                                            <i class="fas fa-exclamation-triangle text-white"></i>
-                                        </div>-->
-                                    </div>
-                                    <div>
-                                        <!--<div class="small text-gray-500">December 2, 2019</div>-->
-                                        <span class="font-weight-bold">Financeiro</span>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item text-center small text-gray-500" href="#">Esconder</a>
-                            </div>
-                        </li>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <div class="mr-3">
+                                </div>
+                                <div>
+                 
+                                    <span class="font-weight-bold">Marketing</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <div class="mr-3">
+                                </div>
+                                <div>
 
-                        <!-- Nav Item - Messages -->
-                        <li class="nav-item dropdown no-arrow mx-1">
-                            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Avaliações
+                                    <span class="font-weight-bold">Financeiro</span>
+                                </div>
                                 
-                            </a>
-                            
-                        </li>
+                            </a>-->
+                            <a class="dropdown-item text-center small text-gray-500" href="#">Esconder</a>
+                        </div>
+                    </li>
 
-                        <li class="nav-item dropdown no-arrow mx-1">
-                            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Eventos
-                                <!--<i class="fas fa-envelope fa-fw"></i>-->
-                                <!-- Counter - Messages -->
-                                <!--<span class="badge badge-danger badge-counter">7</span>-->
-                            </a>
-                            <!-- Dropdown - Messages -->
-                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
-                                <h6 class="dropdown-header">
-                                    Message Center
-                                </h6>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="https://source.unsplash.com/fn_BT9fwg_E/60x60" alt="">
-                                        <div class="status-indicator bg-success"></div>
-                                    </div>
-                                    <div class="font-weight-bold">
-                                        <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been having.</div>
-                                        <div class="small text-gray-500">Emily Fowler · 58m</div>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="https://source.unsplash.com/AU4VPcFN4LE/60x60" alt="">
-                                        <div class="status-indicator"></div>
-                                    </div>
-                                    <div>
-                                        <div class="text-truncate">I have the photos that you ordered last month, how would you like them sent to you?</div>
-                                        <div class="small text-gray-500">Jae Chun · 1d</div>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="https://source.unsplash.com/CS2uCrpNzJY/60x60" alt="">
-                                        <div class="status-indicator bg-warning"></div>
-                                    </div>
-                                    <div>
-                                        <div class="text-truncate">Last month's report looks great, I am very happy with the progress so far, keep up the good work!</div>
-                                        <div class="small text-gray-500">Morgan Alvarez · 2d</div>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt="">
-                                        <div class="status-indicator bg-success"></div>
-                                    </div>
-                                    <div>
-                                        <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</div>
-                                        <div class="small text-gray-500">Chicken the Dog · 2w</div>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item text-center small text-gray-500" href="#">Esconder</a>
-                            </div>
-                        </li>
+                    <!-- Nav Item - Messages -->
+                    <li class="nav-item dropdown no-arrow mx-1">
+                        <a class="nav-link dropdown-toggle" href="../Paginas_Iniciais/Avaliacao.html" aria-haspopup="true" aria-expanded="false">Avaliações
+                        </a>
                         
-                         <li class="nav-item dropdown no-arrow mx-1">
-                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-bell fa-fw"></i>
-                                <!-- Counter - Alerts -->
-                                <span class="badge badge-danger badge-counter">3+</span>
-                            </a>
-                            
-                        </li>
 
-                        <div class="topbar-divider d-none d-sm-block"></div>
-
-                        <!-- Nav Item - User Information -->
-                        <li class="nav-item dropdown no-arrow">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-
-
-                                <!--AQUI VIRÁ COMANDO PHP PRA TRAZER QUAL USUÁRIO ESTÁ LOGADO-->
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small" style="margin: 0 auto 0 auto;">Usuário Logado</span>
-                                <!------------------------------------------------------------------------------>
-
-
-                                <img src="img/user.png" width="2%">
-                            </a>
-                            <!-- Dropdown - User Information -->
-                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown" style="margin: 0 0 0 auto;">
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Ver perfil
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Alterar dados
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Alterar senha
-                                </a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Sair
-                                </a>
+                    </li>
+                    <li class="nav-item dropdown no-arrow mx-1">
+                        <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Eventos
+                            <!--<i class="fas fa-envelope fa-fw"></i>
+                            <!-- Counter - Messages -->
+                            <!--<span class="badge badge-danger badge-counter">7</span>-->
+                        </a>
+                        <!-- Dropdown - Messages -->
+                        <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
+                          <h6 class="dropdown-header">
+                            Eventos
+                        </h6>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                            <div class="font-weight-bold">
+                                Reuniões
                             </div>
-                        </li>
+                        </a>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                            <div class="font-weight-bold">
+                                Cursos
+                            </div>
+                        <a class="dropdown-item text-center small text-gray-500" href="#">Esconder</a>
+                        </div>
+                    </li>
+                    
+ 
 
-                    </ul>
+                    <div class="topbar-divider d-none d-sm-block"></div>
 
-                </nav>
+                    <!-- Nav Item - User Information -->
+                    <li class="nav-item dropdown no-arrow" style="width: 100%;">
+                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="display:flex; justify-content:flex-end; width:100%; padding:0;">
+
+
+                            <!--AQUI VIRÁ COMANDO PHP PRA TRAZER QUAL USUÁRIO ESTÁ LOGADO-->
+                            <span class="mr-2 d-none d-lg-inline text-gray-600 small" >Usuário Logado</span>
+                            <!------------------------------------------------------------------------------>
+                            <img src="img/user.png" width="1%">
+                        </a>
+
+
+                        <!-- Dropdown - User Information -->
+                        <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown" style="margin: 0 0 0 auto;">
+                        
+                            <a class="dropdown-item" href="#">
+                                <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                Alterar dados
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                                Alterar senha
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                Sair
+                            </a>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </nav>
             <div id="maicontent" class="table-responsive">
                 <div class="container-fluid">
 
@@ -460,7 +401,7 @@
                           <h6 class="m-0 font-weight-bold text-primary">Diretoria</h6>
                         </div>
                         <div class="card-body containerOut"><br>
-                          <div class="table-responsive" id="container">
+                          <div class="table-responsive" id="container-2">
                             <div id="one" style="color: #696969;">
                                 <center><img src="fotos/icone-do-usuario.png" height="100" width="100"></center>
                                 <center>
@@ -493,7 +434,25 @@
                         <h6 class="m-0 font-weight-bold text-primary">Projetos</h6>
                       </div>
                       <div class="card-body containerOut"><br>
-                        <div class="table-responsive" id="container">
+                        <div class="table-responsive" id="container-2">
+                            <div id="one" style="color: #696969;">
+                                <center><img src="fotos/icone-do-usuario.png" height="100" width="100"></center>
+                                <center>
+                                    Fulano 0
+                              </center>
+                             </div>
+                             <div id="one" style="color: #696969;">
+                                <center><img src="fotos/icone-do-usuario.png" height="100" width="100"></center>
+                                <center>
+                                    Fulano 1
+                              </center>
+                             </div>
+                             <div id="one" style="color: #696969;">
+                                <center><img src="fotos/icone-do-usuario.png" height="100" width="100"></center>
+                                <center>
+                                    Fulano 2
+                              </center>
+                             </div>
                           <!--<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">-->
                             <?php while($nivers = mysqli_fetch_assoc($select_niver_projetos)) {?>
 							  <div id="one" style="color: black;"><img src="<?php echo $nivers["foto"]; ?>" style="height: 150px; width: 150px;"><center><?php echo $nivers["nome_us"]; ?><br><?php echo date('d/m/Y',strtotime($nivers["dta_nasc"])); ?></center></div>
@@ -508,7 +467,25 @@
                         <h6 class="m-0 font-weight-bold text-primary">Recursos Humanos</h6>
                       </div>
                       <div class="card-body containerOut"><br>
-                        <div class="table-responsive" id="container">
+                        <div class="table-responsive" id="container-2">
+                            <div id="one" style="color: #696969;">
+                                <center><img src="fotos/icone-do-usuario.png" height="100" width="100"></center>
+                                <center>
+                                    Fulano 0
+                              </center>
+                             </div>
+                             <div id="one" style="color: #696969;">
+                                <center><img src="fotos/icone-do-usuario.png" height="100" width="100"></center>
+                                <center>
+                                    Fulano 1
+                              </center>
+                             </div>
+                             <div id="one" style="color: #696969;">
+                                <center><img src="fotos/icone-do-usuario.png" height="100" width="100"></center>
+                                <center>
+                                    Fulano 2
+                              </center>
+                             </div>
                             <?php while($nivers = mysqli_fetch_assoc($select_niver_rh)) {?>
 							  <div id="one" style="color: black;"><img src="<?php echo $nivers["foto"]; ?>" style="height: 150px; width: 150px;"><center><?php echo $nivers["nome_us"]; ?><br><?php echo date('d/m/Y',strtotime($nivers["dta_nasc"])); ?></center></div>
 							<?php
@@ -522,7 +499,25 @@
                           <h6 class="m-0 font-weight-bold text-primary">Qualidade</h6>
                         </div>
                         <div class="card-body containerOut"><br>
-                            <div class="table-responsive" id="container">
+                            <div class="table-responsive" id="container-2">
+                                <div id="one" style="color: #696969;">
+                                    <center><img src="fotos/icone-do-usuario.png" height="100" width="100"></center>
+                                    <center>
+                                        Fulano 0
+                                  </center>
+                                 </div>
+                                 <div id="one" style="color: #696969;">
+                                    <center><img src="fotos/icone-do-usuario.png" height="100" width="100"></center>
+                                    <center>
+                                        Fulano 1
+                                  </center>
+                                 </div>
+                                 <div id="one" style="color: #696969;">
+                                    <center><img src="fotos/icone-do-usuario.png" height="100" width="100"></center>
+                                    <center>
+                                        Fulano 2
+                                  </center>
+                                 </div>
 							<?php while($nivers = mysqli_fetch_assoc($select_niver_qualidade)) {?>
 							  <div id="one" style="color: black;"><img src="<?php echo $nivers["foto"]; ?>" style="height: 150px; width: 150px;"><center><?php echo $nivers["nome_us"]; ?><br><?php echo date('d/m/Y',strtotime($nivers["dta_nasc"])); ?></center></div>
 							<?php
@@ -536,7 +531,25 @@
                           <h6 class="m-0 font-weight-bold text-primary">Marketing</h6>
                         </div>
                         <div class="card-body containerOut"><br>
-                           <div class="table-responsive" id="container">
+                           <div class="table-responsive" id="container-2">
+                            <div id="one" style="color: #696969;">
+                                <center><img src="fotos/icone-do-usuario.png" height="100" width="100"></center>
+                                <center>
+                                    Fulano 0
+                              </center>
+                             </div>
+                             <div id="one" style="color: #696969;">
+                                <center><img src="fotos/icone-do-usuario.png" height="100" width="100"></center>
+                                <center>
+                                    Fulano 1
+                              </center>
+                             </div>
+                             <div id="one" style="color: #696969;">
+                                <center><img src="fotos/icone-do-usuario.png" height="100" width="100"></center>
+                                <center>
+                                    Fulano 2
+                              </center>
+                             </div>
 							<?php while($nivers = mysqli_fetch_assoc($select_niver_marketing)) {?>
 							  <div id="one" style="color: black;"><img src="<?php echo $nivers["foto"]; ?>" style="height: 150px; width: 150px;"><center><?php echo $nivers["nome_us"]; ?><br><?php echo date('d/m/Y',strtotime($nivers["dta_nasc"])); ?></center></div>
 							<?php
@@ -551,7 +564,25 @@
                               <h6 class="m-0 font-weight-bold text-primary">Financeiro</h6>
                             </div>
                             <div class="card-body containerOut"><br>
-                               <div class="table-responsive" id="container">
+                               <div class="table-responsive" id="container-2">
+                                <div id="one" style="color: #696969;">
+                                    <center><img src="fotos/icone-do-usuario.png" height="100" width="100"></center>
+                                    <center>
+                                        Fulano 0
+                                  </center>
+                                 </div>
+                                 <div id="one" style="color: #696969;">
+                                    <center><img src="fotos/icone-do-usuario.png" height="100" width="100"></center>
+                                    <center>
+                                        Fulano 1
+                                  </center>
+                                 </div>
+                                 <div id="one" style="color: #696969;">
+                                    <center><img src="fotos/icone-do-usuario.png" height="100" width="100"></center>
+                                    <center>
+                                        Fulano 2
+                                  </center>
+                                 </div>
                                 <?php while($nivers = mysqli_fetch_assoc($select_niver_financeiro)) {?>
 								  <div id="one" style="color: black;"><img src="<?php echo $nivers["foto"]; ?>" style="height: 150px; width: 150px;"><center><?php echo $nivers["nome_us"]; ?><br><?php echo date('d/m/Y',strtotime($nivers["dta_nasc"])); ?></center></div>
 								<?php
