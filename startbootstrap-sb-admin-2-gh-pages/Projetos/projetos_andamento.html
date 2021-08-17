@@ -61,9 +61,14 @@
 
             <!-- Divider -->
             <hr class="sidebar-divider">
-            <center><h4 style="color: white;"><b>Projetos</b></h4></center>
-            
+          <!--  <center><h4 style="color: white;"><b>Projetos</b></h4></center>-->
+          <li class="nav-item">
+            <!-- Tirei o href as demais classes-->
+            <a class="nav-link-pedro" >
 
+                <h4 style="color:white;"><b>Projetos</b></h4></a>
+        </li>
+            
             <!-- Divider -->
             <hr class="sidebar-divider">
             <!-- Nav Item - Dashboard -->
@@ -319,18 +324,170 @@
                     </ul>
                 </nav>
                 <div class="container-fluid">
-                <h1 class="h3 mb-4 text-gray-800">Em andamento</h1>
-    <!-- PHPBemol    <?php while($proj_andamento = mysqli_fetch_assoc($select_proj_andamento)) {?> -->
-                    <!-- Content Row -->
-                    <div class="row" style="float: center">
-                        <!-- Earnings (Monthly) Card Example -->
-                        <!-- <div class="col-xl-3 mb-4"> -->
-                        <!--       <div class="card border-left-primary shadow h-100 py-2" style="max-width: 180px"> -->
-                                <div class="card-body containerOut"><br>
-                                	<div class="card2 shadow mb-4">
-                    				<center>
-                        				<div class="table-responsive" id="containertools">                                                
-		                                <a class="tools">&nbsp;Projeto 1</a>
+                    
+                        <h1 class="h3 mb-4 text-gray-800">Em andamento</h1>
+    
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                              <h6 class="m-0 font-weight-bold text-primary">Todos os projetos</h6>
+                            </div>
+                    				
+                                        
+                        				<div class="table-responsive" id="containertools">    
+
+
+
+                                            
+                                            <!--------------------------------------------------------------------------------------->
+                                              <!-- Pop up Adicionar Membro-->
+                 <div id="popup-adicionar" class="d-none">
+                    <form class="frmalteracao-pedro" style="color:black;">
+                        <label class="forms-bemol">Nome completo:&nbsp;&nbsp;</label><input type="text" class="form-group-arredondado-pedro"><br><br>
+                        <label class="forms-bemol">Número USP:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" class="form-group-arredondado-pedro"><br><br>
+                        <label class="forms-bemol">E-mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" class="form-group-arredondado-pedro"><br><br>
+                        <label class="forms-bemol">Diretoria:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><select name="cars" class="form-group-arredondado-pedro" id="cars">
+                                            <option value="1">Financeiro</option>
+                                            <option value="2">Marketing</option>
+                                            <option value="3">Projetos</option>
+                                            <option value="4">Qualidade</option>
+                                            <option value="5">Recursos Humanos</option>
+                                            </select><br><br><br>
+                          <a class="btn btn-primary btn-icon-split btn-sm" style="color:white" >
+                            <span class="text">Adicionar</span>
+                          </a>
+
+                          <a onclick="popupAddMem()" class="btn btn-primary btn-icon-split btn-sm teste-pedro" style="color:white">
+                            <span class="text">Cancelar</span>
+                          </a>
+                 </div>
+               <!-- Fim do Pop up de Adicionar Membro-->
+                                            <!-- Pop up Projeto detalhado-->
+                                            <div id="popup-detalhado" class="d-none">
+                                                <div class="membro-detalhado" style="color:black">
+                                                <p style="float: left;"><img src="img/icone-do-usuario.png" id="img-det" height="150" width="150"></p>
+                                                <h5 id="txt-det" style="font-size: 16px"><b>Nome: </b>Carlos Eduardo Eli Capelini Lopes</h5>
+                                                <h5 id="txt-det" style="font-size: 16px"><b>Número USP: </b>11236194</h5><br>
+                                                <br><h5 id="txt-det" style="font-size: 16px"><b>Diretoria: </b>Projetos</h5>
+                                                </div>
+                            
+                                                <div class="botoes-membro-detalhado">
+                                                <br>
+                                                <a class="btn btn-primary btn-icon-split btn-sm teste-bemol" >
+                                                    <span class="text">⠀⠀Termo de adesão⠀⠀</span>
+                                                </a> 
+                                                <a class="btn btn-primary btn-icon-split btn-sm teste-bemol" >
+                                                    <span class="text">Termo de desligamento</span>
+                                                </a><br>
+                                                <a class="btn btn-primaryRed btn-icon-split btn-sm teste-bemol2" >
+                                                    <span class="text">Desligar membro</span>
+                                                </a><br> 
+                                                <a onclick="popupMemDet()" class="btn btn-primary btn-icon-split btn-sm teste-bemol3">
+                                                    <span class="text">Voltar</span>
+                                                </a>
+                                                </div>
+                                                
+                                            </div>
+                                            <!-- Fim popup projeto detalhado-->
+
+
+                                            <div class="card-body containerOut"><br>
+                                                <div class="table-responsive" id="container-2">
+                                                  <!--<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">-->                                               
+                                                   <div id="oneGerenciar" style="color: #696969;">
+                                                    <center><img src="img/adicionar-usuario.png" height="100" width="100" onclick="popupAddMem()"><center>
+                                                    <center> 
+                                                        Adicionar projeto
+                                                  </center>
+                                                  </div> 
+                                                    <div id="oneGerenciar" style="color: #696969;">
+                                                      <center><img src="img/icone-do-usuario.png" height="100" width="100" onclick="popupMemDet()"><center>
+                                                      <center> 
+                                                          Projeto 1
+                                                    </center>
+                                                    </div> 
+                                                    <div id="oneGerenciar" style="color: #696969;">
+                                                      <center><img src="img/icone-do-usuario.png" height="100" width="100" onclick="popupMemDet()"></center>
+                                                      <center> 
+                                                          Projeto 2
+                                                    </center>
+                                                    </div> 
+                                                    <div id="oneGerenciar" style="color: #696969;">
+                                                      <center><img src="img/icone-do-usuario.png" height="100" width="100" onclick="popupMemDet()"></center>
+                                                      <center> 
+                                                          Projeto 3
+                                                    </center> 
+                                                    </div>
+                                                    <div id="oneGerenciar" style="color: #696969;">
+                                                      <center><img src="img/icone-do-usuario.png" height="100" width="100" onclick="popupMemDet()"></center>
+                                                      <center> 
+                                                          Projeto 4
+                                                    </center> <br><br>
+                                                    </div>
+                                                    <div id="oneGerenciar" style="color: #696969;">
+                                                      <center><img src="img/icone-do-usuario.png" height="100" width="100" onclick="popupMemDet()"></center>
+                                                      <center> 
+                                                          Projeto 5
+                                                    </center>
+                                                    </div>                              
+                                                    <div id="oneGerenciar" style="color: #696969;">
+                                                      <center><img src="img/icone-do-usuario.png" height="100" width="100" onclick="popupMemDet()"></center>
+                                                      <center> 
+                                                          Projeto 6
+                                                    </center>
+                                                    </div>
+                                                    <div id="oneGerenciar" style="color: #696969;">
+                                                      <center><img src="img/icone-do-usuario.png" height="100" width="100" onclick="popupMemDet()"></center>
+                                                      <center> 
+                                                          Projeto 7
+                                                    </center>
+                                                    </div> 
+                                                    <div id="oneGerenciar" style="color: #696969;">
+                                                      <center><img src="img/icone-do-usuario.png" height="100" width="100" onclick="popupMemDet()"></center>
+                                                      <center> 
+                                                          Projeto 8
+                                                    </center><br><br>
+                                                    </div>
+                                                    <div id="oneGerenciar" style="color: #696969;">
+                                                      <center><img src="img/icone-do-usuario.png" height="100" width="100" onclick="popupMemDet()"></center>
+                                                      <center> 
+                                                          Projeto 9
+                                                    </center>
+                                                    </div> 
+                                                    <div id="oneGerenciar" style="color: #696969;">
+                                                      <center><img src="img/icone-do-usuario.png" height="100" width="100" onclick="popupMemDet()"></center>
+                                                      <center> 
+                                                          Projeto 10
+                                                    </center>
+                                                    </div> 
+                                                    <div id="oneGerenciar" style="color: #696969;">
+                                                      <center><img src="img/icone-do-usuario.png" height="100" width="100" onclick="popupMemDet()"></center>
+                                                      <center> 
+                                                          Projeto 11
+                                                    </center>
+                                                    </div>
+                                                    <div id="oneGerenciar" style="color: #696969;">
+                                                      <center><img src="img/icone-do-usuario.png" height="100" width="100" onclick="popupMemDet()"></center>
+                                                      <center> 
+                                                          Projeto 12
+                                                    </center>
+                                                    </div>
+                                                    <div id="oneGerenciar" style="color: #696969;">
+                                                      <center><img src="img/icone-do-usuario.png" height="100" width="100" onclick="popupMemDet()"></center>
+                                                      <center> 
+                                                          Projeto 13
+                                                    </center>
+                                                    </div>  
+                                                    <div id="oneGerenciar" style="color: #696969;">
+                                                        <center><img src="img/icone-do-usuario.png" height="100" width="100" onclick="popupMemDet()"></center>
+                                                        <center> 
+                                                            Projeto 14
+                                                      </center>
+                                                      </div>                                                                                 
+                                              </div>
+                                          </div>  
+
+                                            <!--------------------------------------------------------------------------------------->
+		                               <!--<a class="tools">&nbsp;Projeto 1</a>
 		                                <a class="tools">&nbsp;Projeto 2</a>
 		                                <a class="tools">&nbsp;Projeto 3</a>
 		                                <a class="tools">&nbsp;Projeto 4</a>
@@ -341,13 +498,15 @@
 		                                <a class="tools">&nbsp;Projeto 9</a>
 		                                <a class="tools">&nbsp;Projeto 10</a>
 		                                <a class="tools">&nbsp;Projeto 11</a>
-		                                <a class="tools">&nbsp;Projeto 12</a>
+		                                <a class="tools">&nbsp;Projeto 12</a>-->
 		                                <!-- PHPBemol <?php echo $proj_finalizado["nome_proj"]; ?>   -->             
+
+                                        
                         				</div>
-                    				</center>
+                    		
                     				</div>            
                                 </div>
-                        </div>
+                    
                     <!-- PHPBemol		<?php
                     }?>    -->
                     </div>
@@ -368,6 +527,21 @@
 
         <!-- Custom scripts for all pages-->
         <script src="js/sb-admin-2.min.js"></script>
+        <script src="js/sb-admin-2.min.js"></script>
+        <script>
+         function popupAddMem() {
+            if (document.getElementById("popup-adicionar").classList.contains('d-none'))
+                document.getElementById("popup-adicionar").classList.toggle('d-flex');
+            else
+                document.getElementById("popup-adicionar").classList.toggle('d-none');
+        }
+        function popupMemDet() {
+            if (document.getElementById("popup-detalhado").classList.contains('d-none'))
+                document.getElementById("popup-detalhado").classList.toggle('d-flex');
+            else
+                document.getElementById("popup-detalhado").classList.toggle('d-none');
+        }
+    </script>
     </div>
 </body>
 
