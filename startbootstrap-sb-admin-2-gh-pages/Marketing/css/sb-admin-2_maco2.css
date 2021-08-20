@@ -24,6 +24,14 @@
     margin-bottom: -100px;
     margin-right: 50px;
 }
+.nav-link-renan{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-top: 1.4rem;
+    width: 14rem;
+    text-decoration: none;
+}
 
 .user {
     margin-top: 40px;

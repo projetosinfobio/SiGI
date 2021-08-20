@@ -144,9 +144,11 @@
     display: block;
     width: 100%;
     text-align: center;
-    padding: 1rem;
-    width: 14rem
+    padding-top: 1.4rem;
+    width: 14rem;
+    text-decoration: none;
 }
+
 
 image
 :root {
