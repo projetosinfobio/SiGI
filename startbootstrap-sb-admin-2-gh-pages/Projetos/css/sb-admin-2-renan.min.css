@@ -196,6 +196,41 @@
 }
 
 /****responsivisando****/
+/*Celulares*/
+@media screen and
+(min-width:360px) and
+(max-width:640px)
+{
+
+    #containertools{
+        width:45%;
+        margin-left:50%;
+        grid-template-columns: repeat(2,160px);
+        grid-column-gap: 2px;
+        grid-row-gap: 30px;
+        justify-content:center;
+    }
+      
+    .tools{
+        width:50%;
+    }
+    .mx-3{
+        width:50%;
+         display:inline;
+    }
+    .title
+    {
+        font-size:120%;
+    }
+    .nav-item{
+        padding-bottom:2px;
+    }
+    .dropdown{
+        margin-left:-10px;
+    }
+}
+/*Celulares*/
+/*Telas grandes*/
 @media screen and
 (min-width:1400px) and
 (max-width:1920px)
@@ -207,6 +242,7 @@
         margin-top: -20px;
         margin-left:-17.5%;
         width: 100%;
+       
     }
       .dropdowns2
       {
@@ -219,6 +255,7 @@
         margin-left:40rem;
       }
 }
+/*Telas Grandes*/
 /****responsivisando****/
 image
 :root {
@@ -3385,7 +3422,7 @@ fieldset:disabled a.btn {
 
 .btn-link {
     font-weight: 400;
-    color: #4e73df;
+    color: green;
     text-decoration: none
 }
 
