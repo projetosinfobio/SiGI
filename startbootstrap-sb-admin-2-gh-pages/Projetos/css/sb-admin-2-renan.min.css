@@ -207,10 +207,16 @@
         margin-top: -20px;
         margin-left:-17.5%;
         width: 100%;
+    }
+      .dropdowns2
+      {
+        margin-left:25%;
+        width:auto;
+        height: auto;
       }
-      .col-md-3{
-          width:100%;
-          margin-left:10%;
+      .botaum{
+        position: relative;
+        margin-left:40rem;
       }
 }
 /****responsivisando****/
