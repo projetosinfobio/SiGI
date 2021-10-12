@@ -12472,7 +12472,7 @@ body.sidebar-toggled footer.sticky-footer {
 }
 
 .membro-detalhado {
-    display: flex
+    display: flex;
     flex-direction: row;
 }
 
